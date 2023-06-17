@@ -27,7 +27,7 @@ header h1 {
 }
 
 nav {
-    margin: 10px;
+    margin: 5px;
 }
 
 nav a,
@@ -69,7 +69,7 @@ main {
 }
 #line{
     border-bottom: 1px solid #070504;
-    width: 92vw;
+    width: 92%;
     margin: 2vh auto;
 }
 #buttons{
@@ -77,6 +77,18 @@ main {
     justify-content: center;
     margin: 2vh 5vw;
     gap: 10%;
+}
+#select-div{
+    display: none;
+    justify-content: center;
+    margin: 2vh 5vw;
+}
+#select-div select{
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    padding: 7.5px;
+    width: 80vw;
 }
 .button{
     display: flex;
@@ -87,15 +99,60 @@ main {
     font-size: 2rem;
     text-align: center;
 }
-.active{
-    width: 90vw;
+#clanek-1{
+    display: block;
+}
+#clanek-2, #clanek-3{
+    display: none;
+}
+#clanek-1, #clanek-2, #clanek-3{
+    width: 90%;
     margin: 2vh auto;
     padding: 10px;
     border: 1px solid #070504;
     border-radius: 15px;
 }
-#clanek-1-text {
+#article-1-text {
     text-align: center;
+}
+#article-1-text h2{
+    font-size: 2rem;
+}
+#article-1-text h3{
+    font-size: 1.5rem;
+}
+#article-1-odstavec-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    gap: 25px;
+}
+#article-1-odstavec-1 img{
+    height: 66%;
+    width: 66%;
+}
+#article-1-odstavec-1 p, .article-1-odstavec-text p{
+    font-size: 1.2rem;
+}
+.article-1-odstavec-text{
+    display: flex;
+    text-align: center;
+    margin: 15px;
+    gap: 25px;
+}
+.article-1-odstavec-text article p{
+    margin-bottom: 15px;
+}
+.article-1-odstavec-text img{
+    width: 40%;
+}
+.article-1-odstavec-text figure img{
+    width: 66%;
+}
+.article-1-odstavec-text figure{
+    margin: 15px;
+    color: gray;
 }
 footer {
     display: flex;
@@ -140,9 +197,46 @@ footer {
 }
 
 @media (min-width: 767px) and (max-width: 1023px) {
-
+    header{
+        flex-direction: column;
+    }
+    header nav{
+        margin-bottom: 15px;
+    }
+    #article-1-odstavec-1 img, .article-1-odstavec-text img, .article-1-odstavec-text figure img{
+        width: 100%;
+    }
+    .article-1-odstavec-text{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 767px) {
-    
+    header{
+        flex-direction: column;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #article-1-odstavec-1 img, .article-1-odstavec-text img, .article-1-odstavec-text figure img{
+        width: 100%;
+    }
+    .article-1-odstavec-text{
+        flex-direction: column;
+    }
+    #buttons{
+        display: none;
+    }
+    #select-div{
+        display: flex;
+    }
+    #footer-links{
+        flex-direction: column;
+    }
+    #footer-text{
+        margin: 15px;
+        text-align: center;
+    }
 }

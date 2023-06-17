@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/MineCraft.ico">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <title>Minecraft</title>
 </head>
 
@@ -31,60 +31,162 @@
             </div>
 
             <section id="buttons">
-                    <a href="#clanek1" class="button">
-                        Minecraft: Java Edition
-                    </a>
-                    <a href="#clanek2" class="button">
-                        Minecraft: Bedrock Edition
-                    </a>
-                    <a href="#clanek3" class="button">
-                        Minecraft Legends
-                    </a>
+                <a href="#clanek-1" onclick="zmenitJava()" id="clanek1-button" class="button">
+                    Minecraft: Java Edition
+                </a>
+                <a href="#clanek-2" onclick="zmenitBedrock()" id="clanek2-button" class="button">
+                    Minecraft: Bedrock Edition
+                </a>
+                <a href="#clanek-3" onclick="zmenitDungeons()" id="clanek3-button" class="button">
+                    Minecraft Dungeons
+                </a>
             </section>
+            <div id="select-div">
+                <select id="index-select" onchange="zmenitClanek(this)">
+                    <option value="1">Minecraft: Java Edition</option>
+                    <option value="2">Minecraft: Bedrock Edition</option>
+                    <option value="3">Minecraft Dungeons</option>
+                </select>
+            </div>
             <div id="line">
             </div>
             <section id="clanky">
-                <section id="clanek-1" class="active">
+                <section id="clanek-1">
                     <article>
-                        <div id="clanek-1-text">
-                            <h2>Minecraft: Java Edition</h2>
-                            <p>
-                                Minecraft: Java Edition je ikonická a oblíbená počítačová hra, která nabízí hráčům téměř nekonečný svět plný dobrodružství, kreativity a zábavy. Vyvinutá společností Mojang Studios a původně vydána v roce 2011, stala se Minecraft jednou z nejúspěšnějších her v historii, s ohromným světovým dosahem a početnou komunitou hráčů.
-                                </br>Minecraft: Java Edition se odehrává ve světě tvořeném z bloků, kde můžete ovládat postavu z pohledu první osoby. Hráči mají svobodu prozkoumávat rozsáhlé mapy, budovat a rozebírat struktury, sbírat suroviny, těžit drahokamy, zabíjet příšery a interagovat s prostředím kolem nich. Hra nabízí také režimy přežití, tvůrčí a dobrodružný režim, takže si každý hráč může vybrat svůj vlastní herní styl.
-                                </br>
-                                Tvůrčí režim je ideální pro hráče, kteří chtějí realizovat svou neomezenou kreativitu. Zde mohou hráči stavět fantastické struktury, vytvářet umělecká díla a experimentovat s různými architektonickými nápady. Díky obrovskému množství bloků a materiálů, které jsou hráčům k dispozici, jsou možnosti téměř nekonečné.
-                                </br>
-                                Dobrodružný režim představuje výzvu pro hráče, kteří se chtějí vydat na dobrodružství napříč Minecraft světem. Tento režim je plný nebezpečných příšer, tajemných jeskyní, starodávných chrámů a výzev, které musí hráči překonat. Je zde také možnost hrát s přáteli ve vícehráčovém režimu a společně objevovat a budovat.
-                            </p>
+                        <div id="article-1-text">
+                            <h2>
+                                Minecraft: Java Edition
+                            </h2>
+                            <div id="article-1-odstavec-1">
+                                <p>
+                                    Minecraft: Java Edition je ikonická a oblíbená počítačová hra, která nabízí hráčům
+                                    téměř nekonečný svět plný dobrodružství, kreativity a zábavy. Vyvinutá společností
+                                    Mojang Studios a původně vydána v roce 2011, stala se Minecraft jednou z
+                                    nejúspěšnějších her v historii, s ohromným světovým dosahem a početnou komunitou
+                                    hráčů.
+                                    </br>
+                                    Minecraft: Java Edition se odehrává ve světě tvořeném z bloků, kde můžete
+                                    ovládat postavu z pohledu první osoby. Hráči mají svobodu prozkoumávat rozsáhlé
+                                    mapy, budovat a rozebírat struktury, sbírat suroviny, těžit drahokamy, zabíjet
+                                    příšery a interagovat s prostředím kolem nich. Hra nabízí také režimy přežití,
+                                    tvůrčí a dobrodružný režim, takže si každý hráč může vybrat svůj vlastní herní styl.
+                                    </br>
+                                    Tvůrčí režim je ideální pro hráče, kteří chtějí realizovat svou neomezenou
+                                    kreativitu. Zde mohou hráči stavět fantastické struktury, vytvářet umělecká díla a
+                                    experimentovat s různými architektonickými nápady. Díky obrovskému množství bloků a
+                                    materiálů, které jsou hráčům k dispozici, jsou možnosti téměř nekonečné.
+                                    </br>
+                                    Dobrodružný režim představuje výzvu pro hráče, kteří se chtějí vydat na
+                                    dobrodružství napříč Minecraft světem. Tento režim je plný nebezpečných příšer,
+                                    tajemných jeskyní, starodávných chrámů a výzev, které musí hráči překonat. Je zde
+                                    také možnost hrát s přáteli ve vícehráčovém režimu a společně objevovat a budovat.
+                                </p>
+                                <img src="img/Java_Edition_1.20.1.webp" alt="">
+                            </div>
+                            <h3>
+                                Jedinečné vlastnosti Java edice
+                            </h3>
+                            <div class="article-1-odstavec-text">
+                                <article>
+                                    <p>
+                                        Aktualizace jsou spravovány přímo Minecraft Launcherem, což znamená, že nemusí
+                                        procházet certifikací držitelů platformy.
+                                    </p>
+                                    <p>
+                                        Rozsáhlá moddingová komunita: Minecraft: Java Edition je známá svou živou a tvořivou moddingovou komunitou. Hráči mohou vytvářet a instalovat modifikace, které mění a rozšiřují herní obsah a funkce. Díky tomu mohou hráči upravovat svět Minecraftu podle svých představ a přidávat nové prvky, jako jsou nové bloky, příšery, biomech, nástroje a mnoho dalšího.
+                                    </p>
+                                    <p>
+                                        Možnost vytvářet vlastní textury a zvuky: V Minecraft: Java Edition mají hráči možnost upravovat textury bloků, příšer, předmětů a zvuky ve hře. Tato vlastnost umožňuje hráčům vytvářet a používat vlastní texturypodle svého vkusu, což přispívá k individualitě a osobnímu stylu hraní.
+                                    </p>
+                                    <p>
+                                        Experimentální snapshoty: Vývojáři Minecraft: Java Edition pravidelně vydávají tzv. "snapshoty", což jsou experimentální verze hry, které poskytují hráčům možnost testovat nové funkce a obsah před jejich oficiálním vydáním. Hráči tak mohou být součástí vývoje hry a poskytovat zpětnou vazbu vývojářům.
+                                    </p>                                    
+                                </article>
+                                <img src="img/Launcher_MCD_tab.webp" alt="">
+                            </div>
+                            <h3>
+                                Vývoj
+                            </h3>
+                            <div class="article-1-odstavec-text">
+                                <article>
+                                    <p>
+                                        Minecraft: Java Edition byla původně vyvinuta švédským programátorem Markusem "Notchem" Perssonem a vydána firmou Mojang Studios v roce 2011. Hra rychle získala obrovskou popularitu a stala se fenoménem mezi hráči po celém světě. Od svého vydání se Minecraft: Java Edition průběžně vyvíjela a dostávala nové aktualizace a obsah. Minecraft: Java Edition jak už název nasvědčuje je programována jazykem <b>Java</b>.
+                                    </p>
+                                    <figure>
+                                        <img src="img/CaveGame.webp" alt="">
+                                        <figcaption>Nejstarší podoba Minecraftu - Cave Game</figcaption>
+                                    </figure>
+                                    <p>
+                                        V průběhu let byly do Minecraft: Java Edition přidávány další aktualizace a rozšíření, které hru obohacovaly o nový obsah a funkce. Mezi nejvýznamnější aktualizace patří například <b>"The Nether Update"</b> (aktualizace Pekla), která v roce 2020 přinesla kompletní přepracování podsvětí, přidání nových biomech a předmětů. Další významnou aktualizací byla <b>"Caves & Cliffs Update"</b> (aktualizace Jeskyní a Hor), která se plánovala na rok 2021 a přinesla rozšíření jeskyní, nové generované vrstvy a další biomech.
+                                    </p>
+                                    <figure>
+                                        <img src="img/netherupdatecover.jpg" alt="">
+                                        <figcaption>Minecraft 1.16 - Nether Update</figcaption>
+                                    </figure>
+                                    <p>
+                                        Minecraft: Java Edition je stále aktivně vyvíjena a vylepšována, aby hráčům poskytovala neustále nové zážitky a možnosti. Nejnovější aktualizace <b>1.20</b> vyšla 7. června 2023 pod jménem <b>Trails & Tales</b>, kdy sebou přinesla novou strukturu tzv. "Trail Ruins", což jsou podzemní struktury, které fungují jako archeologické náleziště.
+                                    </p>
+                                    <figure>
+                                        <img src="img/Keyart-Minecraft_Trails-Tales_.Net_1280x720 (1).avif" alt="">
+                                        <figcaption>Minecraft 1.20 - Trails & Tales</figcaption>
+                                    </figure>
+                                </article>
+                            </div>
                         </div>
                     </article>
                 </section>
                 <section id="clanek-2">
                     <article>
-                        <div id="clanek-2-text">
+                        <div id="article-2-text">
                             <h2>Minecraft: Bedrock Edition</h2>
                             <p>
-                                Minecraft: Java Edition je ikonická a oblíbená počítačová hra, která nabízí hráčům nekonečný svět plný dobrodružství, kreativity a zábavy. Vyvinutá společností Mojang Studios a původně vydána v roce 2011, stala se Minecraft jednou z nejúspěšnějších her v historii, s ohromným světovým dosahem a početnou komunitou hráčů.
-                                </br>Minecraft: Java Edition se odehrává ve světě tvořeném z bloků, kde můžete ovládat postavu z pohledu první osoby. Hráči mají svobodu prozkoumávat rozsáhlé mapy, budovat a rozebírat struktury, sbírat suroviny, těžit drahokamy, zabíjet příšery a interagovat s prostředím kolem nich. Hra nabízí také režimy přežití, tvůrčí a dobrodružný režim, takže si každý hráč může vybrat svůj vlastní herní styl.
+                                Minecraft: Java Edition je ikonická a oblíbená počítačová hra, která nabízí hráčům
+                                nekonečný svět plný dobrodružství, kreativity a zábavy. Vyvinutá společností Mojang
+                                Studios a původně vydána v roce 2011, stala se Minecraft jednou z nejúspěšnějších her v
+                                historii, s ohromným světovým dosahem a početnou komunitou hráčů.
+                                </br>Minecraft: Java Edition se odehrává ve světě tvořeném z bloků, kde můžete ovládat
+                                postavu z pohledu první osoby. Hráči mají svobodu prozkoumávat rozsáhlé mapy, budovat a
+                                rozebírat struktury, sbírat suroviny, těžit drahokamy, zabíjet příšery a interagovat s
+                                prostředím kolem nich. Hra nabízí také režimy přežití, tvůrčí a dobrodružný režim, takže
+                                si každý hráč může vybrat svůj vlastní herní styl.
                                 </br>
-                                Tvůrčí režim je ideální pro hráče, kteří chtějí realizovat svou neomezenou kreativitu. Zde mohou hráči stavět fantastické struktury, vytvářet umělecká díla a experimentovat s různými architektonickými nápady. Díky obrovskému množství bloků a materiálů, které jsou hráčům k dispozici, jsou možnosti téměř nekonečné.
+                                Tvůrčí režim je ideální pro hráče, kteří chtějí realizovat svou neomezenou kreativitu.
+                                Zde mohou hráči stavět fantastické struktury, vytvářet umělecká díla a experimentovat s
+                                různými architektonickými nápady. Díky obrovskému množství bloků a materiálů, které jsou
+                                hráčům k dispozici, jsou možnosti téměř nekonečné.
                                 </br>
-                                Dobrodružný režim představuje výzvu pro hráče, kteří se chtějí vydat na dobrodružství napříč Minecraft světem. Tento režim je plný nebezpečných příšer, tajemných jeskyní, starodávných chrámů a výzev, které musí hráči překonat. Je zde také možnost hrát s přáteli ve vícehráčovém režimu a společně objevovat a budovat.
+                                Dobrodružný režim představuje výzvu pro hráče, kteří se chtějí vydat na dobrodružství
+                                napříč Minecraft světem. Tento režim je plný nebezpečných příšer, tajemných jeskyní,
+                                starodávných chrámů a výzev, které musí hráči překonat. Je zde také možnost hrát s
+                                přáteli ve vícehráčovém režimu a společně objevovat a budovat.
                             </p>
                         </div>
                     </article>
                 </section>
                 <section id="clanek-3">
                     <article>
-                        <div id="clanek-3-text">
-                            <h2>Minecraft Legends</h2>
+                        <div id="article-3-text">
+                            <h2>Minecraft Dungeons</h2>
                             <p>
-                                Minecraft: Java Edition je ikonická a oblíbená počítačová hra, která nabízí hráčům nekonečný svět plný dobrodružství, kreativity a zábavy. Vyvinutá společností Mojang Studios a původně vydána v roce 2011, stala se Minecraft jednou z nejúspěšnějších her v historii, s ohromným světovým dosahem a početnou komunitou hráčů.
-                                </br>Minecraft: Java Edition se odehrává ve světě tvořeném z bloků, kde můžete ovládat postavu z pohledu první osoby. Hráči mají svobodu prozkoumávat rozsáhlé mapy, budovat a rozebírat struktury, sbírat suroviny, těžit drahokamy, zabíjet příšery a interagovat s prostředím kolem nich. Hra nabízí také režimy přežití, tvůrčí a dobrodružný režim, takže si každý hráč může vybrat svůj vlastní herní styl.
+                                Minecraft: Java Edition je ikonická a oblíbená počítačová hra, která nabízí hráčům
+                                nekonečný svět plný dobrodružství, kreativity a zábavy. Vyvinutá společností Mojang
+                                Studios a původně vydána v roce 2011, stala se Minecraft jednou z nejúspěšnějších her v
+                                historii, s ohromným světovým dosahem a početnou komunitou hráčů.
+                                </br>Minecraft: Java Edition se odehrává ve světě tvořeném z bloků, kde můžete ovládat
+                                postavu z pohledu první osoby. Hráči mají svobodu prozkoumávat rozsáhlé mapy, budovat a
+                                rozebírat struktury, sbírat suroviny, těžit drahokamy, zabíjet příšery a interagovat s
+                                prostředím kolem nich. Hra nabízí také režimy přežití, tvůrčí a dobrodružný režim, takže
+                                si každý hráč může vybrat svůj vlastní herní styl.
                                 </br>
-                                Tvůrčí režim je ideální pro hráče, kteří chtějí realizovat svou neomezenou kreativitu. Zde mohou hráči stavět fantastické struktury, vytvářet umělecká díla a experimentovat s různými architektonickými nápady. Díky obrovskému množství bloků a materiálů, které jsou hráčům k dispozici, jsou možnosti téměř nekonečné.
+                                Tvůrčí režim je ideální pro hráče, kteří chtějí realizovat svou neomezenou kreativitu.
+                                Zde mohou hráči stavět fantastické struktury, vytvářet umělecká díla a experimentovat s
+                                různými architektonickými nápady. Díky obrovskému množství bloků a materiálů, které jsou
+                                hráčům k dispozici, jsou možnosti téměř nekonečné.
                                 </br>
-                                Dobrodružný režim představuje výzvu pro hráče, kteří se chtějí vydat na dobrodružství napříč Minecraft světem. Tento režim je plný nebezpečných příšer, tajemných jeskyní, starodávných chrámů a výzev, které musí hráči překonat. Je zde také možnost hrát s přáteli ve vícehráčovém režimu a společně objevovat a budovat.
+                                Dobrodružný režim představuje výzvu pro hráče, kteří se chtějí vydat na dobrodružství
+                                napříč Minecraft světem. Tento režim je plný nebezpečných příšer, tajemných jeskyní,
+                                starodávných chrámů a výzev, které musí hráči překonat. Je zde také možnost hrát s
+                                přáteli ve vícehráčovém režimu a společně objevovat a budovat.
                             </p>
                         </div>
                     </article>
