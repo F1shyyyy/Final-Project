@@ -89,6 +89,7 @@ main {
     border-radius: 15px;
     padding: 7.5px;
     width: 80vw;
+    text-overflow: ellipsis;
 }
 .button{
     display: flex;
@@ -112,10 +113,13 @@ main {
     border: 1px solid #070504;
     border-radius: 15px;
 }
-#article-1-text {
+#clanek-1 h2, #clanek-2 h2{
     text-align: center;
 }
-#article-1-text h2{
+#article-1-text, #article-2-text {
+    text-align: center;
+}
+#clanek-1 h2, #clanek-2 h2{
     font-size: 2rem;
 }
 #article-1-text h3{
@@ -141,19 +145,20 @@ main {
     margin: 15px;
     gap: 25px;
 }
-.article-1-odstavec-text article p{
+.article-1-odstavec-text p{
     margin-bottom: 15px;
 }
 .article-1-odstavec-text img{
     width: 40%;
 }
-.article-1-odstavec-text figure img{
+.figure-img img{
     width: 66%;
 }
-.article-1-odstavec-text figure{
+.figure-img{
     margin: 15px;
     color: gray;
 }
+
 footer {
     display: flex;
     align-items: center;
@@ -203,7 +208,7 @@ footer {
     header nav{
         margin-bottom: 15px;
     }
-    #article-1-odstavec-1 img, .article-1-odstavec-text img, .article-1-odstavec-text figure img{
+    #article-1-odstavec-1 img, .article-1-odstavec-text img, .figure-img img{
         width: 100%;
     }
     .article-1-odstavec-text{
@@ -220,7 +225,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    #article-1-odstavec-1 img, .article-1-odstavec-text img, .article-1-odstavec-text figure img{
+    #article-1-odstavec-1 img, .article-1-odstavec-text img, .figure-img img{
         width: 100%;
     }
     .article-1-odstavec-text{
