@@ -391,7 +391,7 @@ ul {
     margin: 2vh;
 }
 #mceternal-clanek-text{
-    display: none;
+    display: flex;
     margin: 3vh auto;
     padding: 10px;
     width: 90%;
@@ -483,6 +483,7 @@ ul {
     width: 90%;
 }
 #mceternal-clanek-galerie{
+    display: none;
     margin: 3vh auto;
     border: 1px solid #070504;
     padding: 10px;
