@@ -384,7 +384,128 @@ ul {
 .fabric-mod img {
     width: 50%;
 }
+#mceternal-clanek{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh;
+}
+#mceternal-clanek-text{
+    display: none;
+    margin: 3vh auto;
+    padding: 10px;
+    width: 90%;
+    border-radius: 15px;
+    gap: 5%;
+}
+#mceternal-clanek-text h2{
+    font-size: 2rem;
+    margin: 2vh;
+}
 
+#mceternal-buttons button{
+    font-size: 3rem;
+    padding: 15px;
+    border-radius: 1rem;
+    margin: 15px;
+}
+#popis{
+    background-color: rgb(255, 255, 255);
+}
+#galerie{
+    background-color: rgb(200, 200, 200);
+}
+.mceternal-clanek-odstavec-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 2.5;
+    border: 1px solid #070504;
+    background-color: white;
+    border-radius: 1rem;
+}
+.mceternal-clanek-odstavec-text p, .mceternal-clanek-odstavec-text li{
+    font-size: 1.2rem;
+    margin: 5px 15px;
+}
+.mceternal-clanek-odstavec-text h3{
+    font-size: 2rem;
+}
+.mceternal-clanek-odstavec-text span{
+    margin: 15px;
+}
+.mceternal-clanek-odstavec-text span li{
+    text-align: justify;
+}
+#mceternal-clanek-obrazek{
+    display: flex;
+    justify-content: flex-end;
+    margin: 2vh;
+}
+#mceternal-clanek-obrazek img{
+    border-radius: 1rem;
+}
+#mceternal-clanek-modlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #070504;
+    background-color: white;
+    border-radius: 1rem;
+    flex: 1;
+}
+
+#mceternal-clanek-modlist h3{
+    color: rgb(162, 106, 3);
+    background-color: white;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+#mceternal-clanek-modlist p{
+    font-weight: bold;
+}
+#modlist-more{
+    display: none;
+}
+#modlist-zobrazit-vice{
+    color: #0d37de;
+    align-self: flex-end;
+    margin: 5px 15px;
+    cursor: pointer;
+}
+#mceternal-select{
+    display: none;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    padding: 7.5px;
+    width: 90%;
+}
+#mceternal-clanek-galerie{
+    margin: 3vh auto;
+    border: 1px solid #070504;
+    padding: 10px;
+    width: 90%;
+    border-radius: 15px;
+    gap: 5%;
+}
+#mceternal-galerie-fotky{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: 10px;
+    flex-wrap: wrap;
+
+}
+.galerie-fotka{
+    display: flex;
+    width: 32%;
+}
+.galerie-fotka img{
+    width: 100%;
+    border-radius: 1rem;
+}
 footer {
     display: flex;
     align-items: center;
@@ -540,7 +661,16 @@ footer {
     .fabric-mod img {
         width: 60%;
     }
-
+    #mceternal-clanek-text{
+        flex-direction: column-reverse;
+    }
+    #mceternal-buttons{
+        display: none;
+    }
+    #mceternal-select{
+        display: block;
+        margin-top: 15px;
+    }
     #footer-links {
         flex-direction: column;
     }

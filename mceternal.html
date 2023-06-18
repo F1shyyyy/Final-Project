@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/MineCraft.ico">
+    <link rel="icon" href="img/MCE.png">
+    <script src="js/galerie.js" defer></script>
     <title>MC Eternal</title>
 </head>
 
@@ -24,10 +25,119 @@
             </nav>
         </header>
         <main>
-
+                 
+            <div id="mceternal-clanek">
+                <div id="mceternal-buttons">
+                    <button id="popis" onclick="zmenaPopis()">Popis</button>
+                    <button id="galerie" onclick="zmenaGalerie()">Galerie</button>                       
+                </div>
+                <select id="mceternal-select" onchange="zmenitClanek(this)">
+                    <option value="1">Popis</option>
+                    <option value="2">Galerie</option>
+                </select>
+                <div id="mceternal-clanek-text">
+                    <div id="mceternal-clanek-modlist">
+                        <h3>
+                        <b>Modlist &#709;</b>
+                        </h3>
+                        <p>
+                            /dank/null (by TheRealp455w0rd)<br>[ANGRY PIXEL] The Betweenlands (by oily_oli)<br>Actually Additions (by Ellpeck)<br>Advanced Hook Launchers (by EnderLanky)<br>AE2 Stuff (by bdew)<br>AE2 Wireless Terminal Library (by TheRealp455w0rd)<br>AgriCraft (by InfinityRaider)<br>AI Improvements (by DarkGuardsman)<br>Akashic Tome (by Vazkii)<br>AmbientSounds 3 (by CreativeMD)<br>AppleCore (by squeek502)<br>AppleSkin (by squeek502)<br>AttributeFix<br>Applied Energistics 2 (by AlgorithmX2)<br>ArchitectureCraft - TridentMC Version (by darkevilmac)<br>Armor Toughness Bar (by tfarecnim)<br>Armory Expansion (by AshuraNoYami)<br>Aroma1997Core (by Aroma1997)<br>AromaBackup (by Aroma1997)<br>AtomicStryker's Battle Towers (by atomicstrykergrumpy)<br>Auto Ore Dictionary Converter (by MattDahEpic)<br>AutoRegLib (by Vazkii)<br>Bad Wither No Cookie - Reloaded (by Kreezxil)<br>Baubles (by Azanor13)<br>BdLib (by bdew)<br>Better Builder's Wands (by Portablejim)<br>BetterFps (by Guichaguri)<br>Bewitchment (by sunconure11)<br>BiblioCraft (by Nuchaz)<br>Biome Staff (by TheRealp455w0rd)<br>Biomes O' Plenty (by Forstride)<br>Block Drops (JEI Addon) (by KidsDontPlay)<br>Bookshelf (by DarkhaxDev)<br>Botania (by Vazkii)<br>Buildcraft (by Covert_Jaguar)<br>Building Gadgets (by Direwolf20)<br>Chameleon (by Texelsaur)<br>Career Bees<br>Champions (by TheIllusiveC4)<br>Chance Cubes (by Turkey2349)<br>Charm (by svenhjol)<br>Chisel (by tterrag1098)<br>Chisels &amp; Bits (by AlgorithmX2)<br>Chunk-Pregenerator (by Speiger)<br>Clumps (by Jaredlll08)<br>CodeChicken Lib 1.8.+ (by covers1624)<br>CoFH Core (by TeamCoFH)<br>CoFH World (by TeamCoFH)<br>Common Capabilities (by kroeser)<br>Compact Machines (by davenonymous)<br>ConnectedTexturesMod (by tterrag1098)<br>Construct's Armory (by TheIllusiveC4)<br>Controlling (by Jaredlll08)<br>Cooking for Blockheads (by BlayTheNinth)<br>Corail Tombstone (by Corail_31)<br>Cosmetic Armor Reworked (by LainMI)<br>Crafting Tweaks (by BlayTheNinth)<br>CraftTweaker (by Jaredlll08)<br>CreativeCore (by CreativeMD)<br>Cucumber Library (by BlakeBr0)<br>Culinary Construct (by TheIllusiveC4)<br>Custom Main Menu (by Lumien231)<br>Customized Dungeon Loot (by XxRexRaptorxX)<br>Cyclic (by Lothrazar)<br>Cyclops Core (by kroeser)<br>DarknessLib (by Shinoow)<br>Davincis Vessels (by darkevilmac)<br>DimensionalDoors (by DimensionalDevelopment)<br>Ding (by ohaiiChun)<br>DiscordIntegration (by TheChikachi)<br>Doomlike Dungeons (by JaredBGreat)<br>Doggy Talents<br>Dungeon Tactics (by PegBeard)<br>Dungeons2 (by gottsch)<br>Dynamic Surroundings (by OreCruncher)<br>Electroblob's Wizardry (by Electroblob)<br>Enchantment Descriptions (by DarkhaxDev)<br>Ender IO (by CrazyPants_MC)<br>Ender Storage 1.8.+ (by covers1624)<br>EnderCore (by tterrag1098)<br>Energy Converters (by xalcon)<br>Extra Bit Manipulation (by Phylogeny)<br>Extra Utilities (by RWTema)<br>ExtraCells2 (by Destroyer7128)<br>Fairy Lights (by pau101)<br>Farming for Blockheads (by BlayTheNinth)<br>Farseek (by delvr)<br>Fast Leaf Decay (by olafskiii)<br>FastWorkbench (by Shadows_of_Fire)<br>Fish's Undead Rising (by fish0016054)<br>Flux Networks (by sonar_sonic)<br>FoamFix (by asiekierka)<br>Forestry (by _ForgeUser7678633)<br>Forge MultiPart CBE (by covers1624)<br>ForgeEndertech (by EnderLanky)<br>FTB Library (by LatvianModder)<br>FTB Money (by LatvianModder)<br>FTB Quests (by LatvianModder)<br>FTB Utilities (by LatvianModder)<br>Gas Conduits (by pupnewfster)<br>Gendustry (by bdew)<br>Ghost's Explosives (by ghostgamingpe)<br>GottschCore (by gottsch)<br>Grue (by Shinoow)<br>Guide-API (by TehNut)<br>Hardcore Darkness (by Lumien231)<br>Hats (by ohaiiChun)<br>HunterIllager (by bagu_chan)<br>Hwyla (by TehNut)<br>ICBM - Classic (by DarkGuardsman)<br>Ice and Fire: Dragons in a whole new light! (by alex1the1666)<br>iChunUtil (by ohaiiChun)<br>Immersive Cables (by SanAndreasP)<br>Immersive Engineering (by BluSunrize)<br>Immersive Petroleum (by Flaxbeard)<br>Immersive Tech (by FerroO2000)<br>Improved Backpacks (by DreenDexTwitch)<br>In Control! (by McJty)<br>Industrial Foregoing (by Buuz135)<br>InfinityLib (by InfinityRaider)
+                            <span id="modlist-more">    
+                                <br>Instrumental Mobs (by Mrbysco)<br>Integrated Dynamics (by kroeser)<br>Integrated Tunnels (by kroeser)<br>Integration Foregoing (by Jackyy)<br>Inventory Pets (by Purplicious_Cow_)<br>Inventory Tweaks (by JimeoWan)<br>Iron Chests (by ProgWML6)<br>It's the little things (by Zlepper)<br>Item Filters (by LatvianModder)<br>IvToolkit (by Ivorforce)<br>JAOPCA (by TheLMiffy1111)<br>JourneyMap (by techbrew)<br>JEI Bees<br>Just Enough Calculation (by towdium)<br>Just Enough Energistics (JEE) (by TheRealp455w0rd)<br>Just Enough HarvestCraft (JEHC) (by mrAppleXZ)<br>Just Enough Items (JEI) (by mezz)<br>Just Enough Resources (JER) (by way2muchnoise)<br>LagGoggles (by Terminator_NL)<br>Large Ore Deposits (by EnderLanky)<br>LetsEncryptCraft (by CloudyPSP)<br>Level Up! Reloaded (by BeetoGuy)<br>LittleTiles (by CreativeMD)<br>LLibrary (by _ForgeUser11902522)<br>Login Shield (by Glasspelican)<br>Loot Capacitor Tooltips (by tfarecnim)<br>Loot Games (by Time_Conqueror)<br>LunatriusCore (by Lunatrius)<br>MalisisCore (by Ordinastie)<br>MalisisDoors (by Ordinastie)<br>Mantle (by mDiyo)<br>MattDahEpic Core (MDECore) (by MattDahEpic)<br>McJtyLib (by McJty)<br>MCMultiPart (by amadornes)<br>Mekanism (by bradyaidanc)<br>Mekanism Generators (by bradyaidanc)<br>Mekanism Tools (by bradyaidanc)<br>MenuMobs (by Superbas11)<br>Minecolonies (by H3lay)<br>MineTweaker RecipeMaker (by DoubleDoorDev)<br>Moar Tinkers (by AshuraNoYami)<br>Mob Grinding Utils (by vadis365)<br>Modular Powersuits (by machinemuse)<br>More Overlays (by FeldiM245)<br>Morpheus (by Quetzi)<br>Mouse Tweaks (by YaLTeR)<br>MovingWorld (by darkevilmac)<br>Mowzie's Mobs (by bobmowzie)<br>MPUtils (by GenDeathrow)<br>Multi Mob Library (by Daveyx0)<br>Mystical Agradditions (by BlakeBr0)<br>Mystical Agriculture (by BlakeBr0)<br>Mystical World (by EpicSquid319)<br>MysticalLib (by EpicSquid319)<br>Nature's Aura (by Ellpeck)<br>Nature's Compass (by Chaosyr)<br>NetherPortalFix (by BlayTheNinth)<br>NotEnoughIDs (by fewizz_)<br>NuclearCraft (by tomdodd4598)<br>Numina (by machinemuse)<br>OldJavaWarning (by DarkhaxDev)<br>OMLib (by Keridos)<br>Open Modular Turrets (by Keridos)<br>OpenBlocks (by OpenMods)<br>OpenComputers (by Sangar_)<br>OpenModsLib (by OpenMods)<br>Ore Excavation (by Funwayguy)<br>OreLib (by OreCruncher)<br>Overloaded Armor Bar (by tfarecnim)<br>p455w0rd's Library (by TheRealp455w0rd)<br>Paintings ++ (by AbsolemJackdaw)<br>Pam's Cookables - Pam's Harvestcraft Addon (by BloodWorkXGaming)<br>Pam's HarvestCraft (by pamharvestcraft)<br>Patchouli (by Vazkii)<br>Phosphor (by jellysquid_)<br>Placebo (by Shadows_of_Fire)<br>PlusTiC (by landmaster_phuong0429)<br>Portal Gun (by ohaiiChun)<br>Practical Logistics 2 (by sonar_sonic)<br>Primitive Mobs (by Daveyx0)<br>Quark (by Vazkii)<br>Random Things (by Lumien231)<br>RandomPatches (by TheRandomLabs)<br>Rats (by alex1the1666)<br>ReAuth (by TechnicianLP)<br>Reborn Core (by modmuss50)<br>Redstone Flux (by TeamCoFH)<br>Reskillable (by lanse505)<br>Resource Loader (by Lumien231)<br>RFTools (by McJty)<br>RFTools Dimensions (by McJty)<br>Roots (by EpicSquid319)<br>Roguelike Dungeons (by greymerktv)<br>Ruins (Structure Spawning System) (by atomicstrykergrumpy)<br>Scannable (by Sangar_)<br>Shadowfacts' Forgelin (by ShadowfactsDev)<br>ShadowMC (by ShadowfactsDev)<br>Signpost (by Gollorum)<br>Simple Storage Network (by Lothrazar)<br>Simply Jetpacks 2 (by Tomson124)<br>Sonar Core (by sonar_sonic)<br>Spice of Life: Carrot Edition (by lordcazsius)<br>Steve's Carts Reborn (by modmuss50)<br>Storage Drawers (by Texelsaur)<br>Storage Drawers Extras (by Texelsaur)<br>Streams (by delvr)<br>Stupid Things (by Furgle)<br>TAIGA (Tinkers alloying addon) (by zkafaceTV)<br>Tech Reborn (by modmuss50)<br>Tesla Core Lib (by face_of_cat)<br>Thaumcraft (by Azanor13)<br>The Beneath (by Shinoow)<br>The Midnight (by cipher_zero_x)<br>The Summoner (by Daveyx0)<br>The Twilight Forest (by Benimatic)<br>Thaumic JEI<br>Thermal Cultivation (by TeamCoFH)<br>Thermal Dynamics (by TeamCoFH)<br>Thermal Expansion (by TeamCoFH)<br>Thermal Foundation (by TeamCoFH)<br>Thermal Innovation (by TeamCoFH)<br>Time Core (by Time_Conqueror)<br>Tinker's JEI (by Possible_triangle)<br>Tinkers Construct (by mDiyo)<br>Tinkers' Tool Leveling (by bonusboni)<br>Totemic (by ljfa2)<br>Treasure2! (by gottsch)<br>Tweakers Construct (by RCXcrafter)<br>UniDict (by WanionCane)<br>Vampirism - Become a vampire! (by maxanier)<br>VanillaFix (by Runemoro)<br>Waila Harvestability (by squeek502)<br>WanionLib (by WanionCane)<br>Waystones (by BlayTheNinth)<br>Wireless Crafting Terminal (by TheRealp455w0rd)<br>Wireless Redstone CBE (by covers1624)<br>Wither Skeleton Tweaks (by Shadows_of_Fire)<br>WrapUp (by TheLMiffy1111)<br>XNet (by McJty)<br>ZeroCore (by ZeroNoRyouki)
+                            </span>
+                        </p>
+                        <p id="modlist-zobrazit-vice" onclick="showMods()">
+                            Zobrazit více...
+                        </p>
+                    </div>
+                    <div class="mceternal-clanek-odstavec-text">
+                        <h2>
+                            MC Eternal
+                        </h2>
+                        <p>
+                            MC Eternal vezme tradiční zážitek z Minecraftu a umocní ho řadou modů pečlivě vybraných tak, aby vytvořily poutavé a ponořující dobrodružství. Od okamžiku, kdy vstoupíte do světa, budete uvítáni novými biomami, strukturami a tvory, které přidávají hloubku hře. Bez ohledu na to, jestli prozkoumáváte živé krajiny, ponořujete se do nebezpečných dungeonů nebo se vydáváte do Netheru, MC Eternal vám zajišťuje, že vždy budete mít něco nového a vzrušujícího k objevování.
+                        </p>
+                        <figure class="figure-img">
+                            <img src="img/ratratratratratrat.png" alt="">
+                            <figcaption>Můžete si ochočit krysy :)</figcaption>
+                        </figure>
+                        <p>
+                            Jedním z hlavních prvků MC Eternal je jeho rozsáhlý výběr modů. Modpack obsahuje více než 300 modů, z nichž každý přináší své vlastní jedinečné prvky do hry. Tyto mody pokrývají širokou škálu kategorií, včetně technologie, magie, průzkumu, zemědělství a dalších. Hráči si mohou vybrat svůj preferovaný herní styl a přizpůsobit si zážitek dle svých představ. Od složitých strojů a automatizačních systémů po ovládání mocných kouzel a rituálů, MC Eternal nabízí širokou škálu herních možností.
+                        </p>
+                        <figure class="figure-img">
+                            <img src="img/ferrous.png" alt="">
+                            <figcaption>Ferrous - Jeden z bossů</figcaption>
+                        </figure>
+                        <p>
+                            MC Eternal představuje poutavý systém postupu, který hráčům poskytuje směr a účel. Skrze sérii questů a cílů jsou hráči prováděni různými fázemi hry, odemčením nových funkcí, předmětů a oblastí s postupem. Systém questů pomáhá hráčům orientovat se v rozsáhlém modpacku nabízením jasných cílů a odměn, což zajišťuje strukturovaný a angažující zážitek.
+                        </p>
+                        <figure class="figure-img">
+                            <img src="img/nazornaukazka.gif" alt="">
+                            <figcaption>Názorná ukázka angažujícího zážitku</figcaption>
+                        </figure>
+                        <p>
+                            MC Eternal poskytuje hráčům rozsáhlou škálu možností přizpůsobení, které jim umožňuje přizpůsobit si herní zážitek svým představám. Od změny obtížnosti nastavení až po úpravu konkrétních aspektů modů mohou hráči vyladit modpack tak, aby vyhovoval jejich požadované úrovni výzvy nebo upravili herní mechaniky. Tento stupeň přizpůsobení zajišťuje, že každý hráč může vytvořit unikátní zážitek, který odpovídá jeho hernímu stylu a preferencím.
+                        </p>
+                        <figure class="figure-img">
+                            <img src="img/meteor.png" alt="">
+                            <figcaption>Meteor pod věží</figcaption>
+                        </figure>
+                        <h3>
+                            Co vám hra může nabídnout?
+                        </h3>
+                        <span>
+                            <ul>
+                                <li>Stovky materiálů pro Tinkers Construct</li>
+                                <li>Více než 750 questů s neustále se rozšiřujícím obsahem!</li>
+                                <li>Vytvářejte a navrhujte rozsáhlé multifunkční továrny, které mohou být tak jednoduché nebo zbytečně složité, jak si přejete.</li>
+                                <li>Desítky domestikovatelných mazlíčků a bytostí</li>
+                                <li>Založte vlastní osídlené město s pracovníky, občany a staviteli pomocí MineColonies</li>
+                                <li>Úplně vlastní ekonomický systém, který umožňuje hráčům vybrat si povolání a prodávat v rámci herního obchodu pro získání měny!</li>
+                                <li>Výrazné RPG prvky propojené se vědou v jednom velkém balíčku, vyberte si, co se vám nejvíce líbí. Jste mág? Šílený vědec? Farmář? Možnosti jsou neomezené!</li>
+                                <li>Unikátní systém odměn, který podporuje průzkum a posílá vás na divoká dobrodružství za nebezpečnými a tajemnými bytostmi!</li>
+                                <li>Vlastní dungeony, struktury a bossové pro průzkum, vyplenění a boj</li>
+                                <li>Tajemství a sběratelské předměty, které můžete najít a předvést</li>
+                                <li>Legendární artefakty, které můžete shromažďovat a hledat</li>
+                                <li>Plně dynamický obchodní systém s grafickým rozhraním, kde si můžete nakupovat na srdce zboží, které vám prospěje, nebo zábavné zbytečné vtipné předměty.</li>
+                            </ul>                            
+                        </span>
+                    </div>   
+                </div>
+                <div id="mceternal-clanek-galerie">
+                    <div id="mceternal-galerie-fotky">
+                        <div class="galerie-fotka">
+                            <img src="img/mceternal1.png" alt="" id="fotka1" onclick="zvetsitFotku(0)" >
+                        </div>
+                        <div class="galerie-fotka">
+                            <img src="img/mceternal2.png" alt="" id="fotka2" onclick="zvetsitFotku(1)">
+                        </div>
+                        <div class="galerie-fotka">
+                            <img src="img/mceternal3.png" alt="" id="fotka3" onclick="zvetsitFotku(2)">
+                        </div>
+                        <div class="galerie-fotka">
+                            <img src="img/mceternal4.png" alt="" id="fotka4" onclick="zvetsitFotku(3)">
+                        </div>
+                        <div class="galerie-fotka">
+                            <img src="img/mceternal5.png" alt="" id="fotka5" onclick="zvetsitFotku(4)">
+                        </div>
+                        <div class="galerie-fotka">
+                            <img src="img/mceternal6.png" alt="" id="fotka6" onclick="zvetsitFotku(5)">
+                        </div>
+                        <div class="galerie-fotka">
+                            <img src="img/mceternal7.png" alt="" id="fotka7" onclick="zvetsitFotku(6)">
+                        </div>
+                        <div class="galerie-fotka">
+                            <img src="img/mceternal8.png" alt="" id="fotka8" onclick="zvetsitFotku(7)">
+                        </div>
+                        <div class="galerie-fotka">
+                            <img src="img/mceternal9.gif" alt="" id="fotka9" onclick="zvetsitFotku(8)">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
-            <section id="footer-links">
+            <div id="footer-links">
                 <div class="odkazy">
                     <a href="https://discord.gg/NRZaTtVXcN" target="_blank">
                         <img src="img/discordicon.png" alt="">
@@ -58,7 +168,7 @@
                         <p>Youtube</p>
                     </a>
                 </div>
-            </section>
+            </div>
             <div id="footer-text">
                 <p>Copyright &copy; 2023 Ondřej Kábele. Všechna práva vyhrazena.</p>
             </div>
