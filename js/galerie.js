@@ -54,6 +54,7 @@ function zvetsitFotku(index){
         fotky[index].style.position = "fixed";
         fotky[index].style.transform = "translate(-50%, -50%)";
         fotky[index].style.transition = "transform 250ms";
+        fotky[index].style.zIndex = "1";
         fotky[index].style.width = "75%";
         fotky[index].style.top = "50%";
         fotky[index].style.left = "50%";
@@ -62,6 +63,7 @@ function zvetsitFotku(index){
         fotky[index].style.position = "static";
         fotky[index].style.width = "100%";
         fotky[index].style.transform = "translate(0%, 0%)";
+        fotky[index].style.zIndex = "0";
         zvetseno = false;
     }
 }

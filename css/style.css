@@ -585,6 +585,14 @@ footer {
     .fabric-mod img {
         width: 70%;
     }
+    #mceternal-galerie-fotky{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .galerie-fotka{
+        width: 85%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -671,6 +679,14 @@ footer {
     #mceternal-select{
         display: block;
         margin-top: 15px;
+    }
+    #mceternal-galerie-fotky{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .galerie-fotka{
+        width: 85%;
     }
     #footer-links {
         flex-direction: column;
