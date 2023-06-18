@@ -1,4 +1,3 @@
-let forgeMods = document.getElementById("forge-modifikace");
 let verze = [5];
 verze[0] = document.getElementById("forge-mdp-1710");
 verze[1] = document.getElementById("forge-mdp-1102");
@@ -7,17 +6,8 @@ verze[3] = document.getElementById("forge-mdp-1165");
 verze[4] = document.getElementById("forge-mdp-1192");
 let pozice = 0;
 let zapnuto = false;
-function dropdownMods(){
-    if (!zapnuto) {
-        forgeMods.style.display = "flex";
-        zapnuto = true;
-    } else if (zapnuto) {
-        forgeMods.style.display = "none";
-        zapnuto = false;
-    }
-}
+
 function zmenaVerze(answer){
-    console.log(verze[pozice])
     if (answer.value == 0) {
         verze[pozice].style.display = "none";
         verze[0].style.display = "flex";

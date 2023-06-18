@@ -27,6 +27,7 @@
         <main>
             <section id="forge-clanek">
                 <h2 id="forge-uvod">
+                    <p></p>
                     <img src="img/Minecraft_Forge_logo.webp" alt="">
                 </h2>
                 <div class="forge-clanek-text">
@@ -40,7 +41,7 @@
                         <p>
                             Jednou z hlavních výhod Minecraft Forge je jeho rozsáhlá modderská komunita. S Forge jako základem vytvořili nespočet modderů širokou škálu modifikací, od nových předmětů, bloků a mobů až po celé dimenze a herní mechaniky. Bez ohledu na aspekt Minecraftu, který chcete vylepšit nebo změnit, je pravděpodobné, že existuje Forge modifikace, která splní vaše přání.
                         </p>
-                        <button onclick="dropdownMods()" id="forge-modifikace-dropdown">Seznam nejznámějších Forge modifikací &#11167</button>
+                        <p id="forge-modifikace-dropdown">Seznam nejznámějších Forge modifikací &#11167;</p>
                         <div id="forge-modifikace">
                             <div class="modifikace">
                                 <a href="https://www.curseforge.com/minecraft/mc-mods/jei" target="_blank">
@@ -109,22 +110,11 @@
                         <p>
                             Instalace Forge a používání modifikací je relativně jednoduché. Tým Forge poskytuje instalátor, který se stará o proces nastavení, aby byl přístupný hráčům s různou úrovní technického povědomí. Jakmile je Forge nainstalován, hráči mohou procházet různé webové stránky nebo fóra zaměřená na modifikace, aby našli modifikace, které je zaujmou. Stažení modifikace obvykle spočívá v umístění souboru modifikace do příslušné složky určené pro modifikace v hře a po rychlém restartu je modifikace připravena k použití.
                         </p>
-                        <!-- <h3>
-                            Verze
-                        </h3>
-                        <p>
-                            Zde můžete vidět forge verze bla bla bla
-                        </p>
-                        <div id="forge-verze">
-                            <p>
-                                dropdown
-                            </p>
-                        </div> -->
                     </div>
                 </div>
                 <h2>Modpacky</h2>
-                <div id="forge-verze-select">
-                    <select name="" id="" onchange="zmenaVerze(this)">
+                <div>
+                    <select id="forge-verze-select" onchange="zmenaVerze(this)">
                         <option value="0">1.7.10</option>
                         <option value="1">1.10.2</option>
                         <option value="2">1.12.2</option>
@@ -164,15 +154,15 @@
                     </div>
                     <div id="forge-mdp-1102" class="forge-modpacks">
                         <div class="forge-modpack">
-                            <a href="https://www.curseforge.com/minecraft/modpacks/ftb-presents-skyfactory-3" target="_blank">
-                                <img src="img/SF3.png" alt="">
-                                <p>SkyFactory 3</p>
-                            </a>
-                        </div>
-                        <div class="forge-modpack">
                             <a href="https://www.curseforge.com/minecraft/modpacks/farming-valley" target="_blank">
                                 <img src="img/FV.png" alt="">
                                 <p>Farming Valley</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/ftb-presents-skyfactory-3" target="_blank">
+                                <img src="img/SF3.png" alt="">
+                                <p>SkyFactory 3</p>
                             </a>
                         </div>
                         <div class="forge-modpack">
@@ -190,11 +180,12 @@
                     </div>
                     <div id="forge-mdp-1122" class="forge-modpacks">
                         <div class="forge-modpack">
-                            <a href="https://www.curseforge.com/minecraft/modpacks/sevtech-ages" target="_blank">
-                                <img src="img/STA.png" alt="">
-                                <p>SevTech: Ages</p>
+                            <a href="https://www.curseforge.com/minecraft/modpacks/all-the-mods-3" target="_blank">
+                                <img src="img/ATM3.png" alt="">
+                                <p>All The Mods 3</p>
                             </a>
                         </div>
+
                         <div class="forge-modpack">
                             <a href="po3.html">
                                 <img src="img/PO3.png" alt="">
@@ -208,9 +199,9 @@
                             </a>
                         </div>
                         <div class="forge-modpack">
-                            <a href="https://www.curseforge.com/minecraft/modpacks/all-the-mods-3" target="_blank">
-                                <img src="img/ATM3.png" alt="">
-                                <p>All The Mods 3</p>
+                            <a href="https://www.curseforge.com/minecraft/modpacks/sevtech-ages" target="_blank">
+                                <img src="img/STA.png" alt="">
+                                <p>SevTech: Ages</p>
                             </a>
                         </div>
                     </div>
@@ -222,15 +213,15 @@
                             </a>
                         </div>
                         <div class="forge-modpack">
-                            <a href="https://www.curseforge.com/minecraft/modpacks/the-pixelmon-modpack" target="_blank">
-                                <img src="img/TPXM.png" alt="">
-                                <p>The Pixelmon Modpack</p>
-                            </a>
-                        </div>
-                        <div class="forge-modpack">
                             <a href="https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc1" target="_blank">
                                 <img src="img/BMC1.png" alt="">
                                 <p>Better MC 1</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/the-pixelmon-modpack" target="_blank">
+                                <img src="img/TPXM.png" alt="">
+                                <p>The Pixelmon Modpack</p>
                             </a>
                         </div>
                         <div class="forge-modpack">
