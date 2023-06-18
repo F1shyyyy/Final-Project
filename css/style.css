@@ -72,26 +72,30 @@ ul {
     background-color: #3b8526;
 }
 
-#line {
+.line {
     border-bottom: 1px solid #070504;
     width: 92%;
-    margin: 2vh auto;
+    margin: 3vh auto;
 }
 
-#buttons {
+.buttons {
     display: flex;
     justify-content: center;
     margin: 2vh 5vw;
     gap: 10%;
 }
 
-#select-div {
-    display: none;
-    justify-content: center;
-    margin: 2vh 5vw;
+.button:hover{
+    cursor: pointer;
 }
 
-#select-div select {
+.select-div {
+    display: none;
+    justify-content: center;
+    margin: 4vh 5vw;
+}
+
+.select-div select {
     font-size: 2rem;
     text-align: center;
     border-radius: 15px;
@@ -104,24 +108,29 @@ ul {
     display: flex;
     color: #070504;
     border: 1px solid #070504;
+    background-color: #f7f8f9;
     border-radius: 15px;
     padding: 50px 15px;
     font-size: 2rem;
     text-align: center;
 }
 
-#clanek-1 {
+#clanek-1,
+#clanek-4 {
     display: block;
 }
 
 #clanek-2,
-#clanek-3 {
+#clanek-3,
+#clanek-5 {
     display: none;
 }
 
 #clanek-1,
 #clanek-2,
-#clanek-3 {
+#clanek-3,
+#clanek-4,
+#clanek-5 {
     width: 90%;
     margin: 2vh auto;
     padding: 10px;
@@ -131,48 +140,54 @@ ul {
 
 #clanek-1 h2,
 #clanek-2 h2,
-#clanek-3 h2 {
+#clanek-3 h2,
+#clanek-4 h2,
+#clanek-5 h2 {
     text-align: center;
     font-size: 2rem;
 }
 
 #article-1-text,
 #article-2-text,
-#article-3-text {
+#article-3-text,
+#article-4-text,
+#article-5-text {
     text-align: center;
 }
 
 #article-1-text h3,
 #article-2-text h3,
-#article-3-text h3 {
+#article-3-text h3,
+#article-4-text h3,
+#article-5-text h3 {
     font-size: 1.5rem;
 }
 
 .article-1-odstavec-text p,
 .article-2-odstavec-text p,
 .article-2-rozdily li,
-.article-3-odstavec-text {
+.article-3-odstavec-text p,
+.article-4-odstavec-text p,
+.article-5-odstavec-text p {
     font-size: 1.2rem;
-}
-
-.article-1-odstavec-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 15px;
-    gap: 25px;
 }
 
 .article-1-odstavec-text p,
 .article-2-odstavec-text p,
-.article-3-odstavec-text p {
+.article-3-odstavec-text p,
+.article-4-odstavec-text p,
+.article-5-odstavec-text p {
     margin-bottom: 15px;
 }
 
 .article-2-rozdily {
     text-align: left;
     margin: 15px;
+}
+
+#clanek-4,
+#clanek-5{
+    margin-bottom: 50px;
 }
 
 .figure-img img {
@@ -182,6 +197,19 @@ ul {
 .figure-img {
     margin: 15px;
     color: gray;
+}
+
+.preklik{
+    color: black;
+}
+
+.preklik:hover{
+    color: #4e2612;
+}
+
+#buttons-modded button{
+    font-size: 3rem;
+    padding: 5%;
 }
 
 footer {
@@ -255,11 +283,11 @@ footer {
         width: 100%;
     }
 
-    #buttons {
+    .buttons {
         display: none;
     }
 
-    #select-div {
+    .select-div {
         display: flex;
     }
 

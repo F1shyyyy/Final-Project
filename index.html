@@ -18,10 +18,10 @@
                 <h1>Minecraft</h1>
             </a>
             <nav>
-                <a href="mods.html">Mody</a>
+                <a href="forge.html">Forge</a>
+                <a href="fabric.html">Fabric</a>
                 <a href="mceternal.html">MC Eternal</a>
                 <a href="po3.html">PO3</a>
-                <a href="stoneblock2.html">StoneBlock 2</a>
             </nav>
         </header>
         <main>
@@ -30,323 +30,371 @@
                 <a id="uvod-button" href="#buttons">Pokračovat</a>
             </div>
 
-            <div id="buttons">
-                <a href="#clanek-1" onclick="zmenitJava()" id="clanek1-button" class="button">
-                    Minecraft: Java Edition
-                </a>
-                <a href="#clanek-2" onclick="zmenitBedrock()" id="clanek2-button" class="button">
-                    Minecraft: Bedrock Edition
-                </a>
-                <a href="#clanek-3" onclick="zmenitDungeons()" id="clanek3-button" class="button">
-                    Minecraft Dungeons
-                </a>
+            <div class="buttons" id="buttons">
+                <button onclick="zmenitJava()" id="clanek1-button" class="button">Minecraft: Java Edition</button>
+                <button onclick="zmenitBedrock()" id="clanek2-button" class="button">Minecraft: Bedrock Edition</button>
+                <button onclick="zmenitDungeons()" id="clanek3-button" class="button">Minecraft Dungeons</button>
             </div>
-            <div id="select-div">
-                <select id="index-select" onchange="zmenitClanek(this)">
+            <div class="select-div">
+                <select onchange="zmenitVanilla(this)">
                     <option value="1">Minecraft: Java Edition</option>
                     <option value="2">Minecraft: Bedrock Edition</option>
                     <option value="3">Minecraft Dungeons</option>
                 </select>
             </div>
-            <div id="line"></div>
-            <div id="clanky">
-                <section id="clanek-1">
-                    <h2>
-                        Minecraft: Java Edition
-                    </h2>
-                    <article>
-                        <div id="article-1-text">
-                            <div class="article-1-odstavec-text">
-                                <div>
-                                    <p>
-                                        Minecraft: Java Edition je ikonická a oblíbená počítačová hra, která nabízí hráčům
-                                        téměř nekonečný svět plný dobrodružství, kreativity a zábavy. Vyvinutá společností
-                                        Mojang Studios a původně vydána v roce 2011, stala se Minecraft jednou z
-                                        nejúspěšnějších her v historii, s ohromným světovým dosahem a početnou komunitou
-                                        hráčů.
-                                    </p>
-                                    <p>
-                                        Minecraft: Java Edition se odehrává ve světě tvořeném z bloků, kde můžete
-                                        ovládat postavu z pohledu první osoby. Hráči mají svobodu prozkoumávat rozsáhlé
-                                        mapy, budovat a rozebírat struktury, sbírat suroviny, těžit drahokamy, zabíjet
-                                        příšery a interagovat s prostředím kolem nich. Hra nabízí také režimy přežití,
-                                        tvůrčí a dobrodružný režim, takže si každý hráč může vybrat svůj vlastní herní styl.
-                                    </p>
-                                    <p>
-                                        Tvůrčí režim je ideální pro hráče, kteří chtějí realizovat svou neomezenou
-                                        kreativitu. Zde mohou hráči stavět fantastické struktury, vytvářet umělecká díla a
-                                        experimentovat s různými architektonickými nápady. Díky obrovskému množství bloků a
-                                        materiálů, které jsou hráčům k dispozici, jsou možnosti téměř nekonečné.
-                                    </p>
-                                    <p>
-                                        Dobrodružný režim představuje výzvu pro hráče, kteří se chtějí vydat na
-                                        dobrodružství napříč Minecraft světem. Tento režim je plný nebezpečných příšer,
-                                        tajemných jeskyní, starodávných chrámů a výzev, které musí hráči překonat. Je zde
-                                        také možnost hrát s přáteli ve vícehráčovém režimu a společně objevovat a budovat.
-                                    </p>
-                                    <figure class="figure-img">
-                                        <img src="img/Java_Edition_1.20.1.webp" alt="">
-                                        <figcaption>Minecraft: Java Edition - Titulní stránka</figcaption>
-                                    </figure>
-                                </div>
+            <div class="line"></div>
+            <section id="clanek-1">
+                <h2>
+                    Minecraft: Java Edition
+                </h2>
+                <article>
+                    <div id="article-1-text">
+                        <div class="article-1-odstavec-text">
+                            <div>
+                                <p>
+                                    Minecraft: Java Edition je ikonická a oblíbená počítačová hra, která nabízí hráčům
+                                    téměř nekonečný svět plný dobrodružství, kreativity a zábavy. Vyvinutá společností
+                                    Mojang Studios a původně vydána v roce 2011, stala se Minecraft jednou z
+                                    nejúspěšnějších her v historii, s ohromným světovým dosahem a početnou komunitou
+                                    hráčů.
+                                </p>
+                                <p>
+                                    Minecraft: Java Edition se odehrává ve světě tvořeném z bloků, kde můžete
+                                    ovládat postavu z pohledu první osoby. Hráči mají svobodu prozkoumávat rozsáhlé
+                                    mapy, budovat a rozebírat struktury, sbírat suroviny, těžit drahokamy, zabíjet
+                                    příšery a interagovat s prostředím kolem nich. Hra nabízí také režimy přežití,
+                                    tvůrčí a dobrodružný režim, takže si každý hráč může vybrat svůj vlastní herní styl.
+                                </p>
+                                <p>
+                                    Tvůrčí režim je ideální pro hráče, kteří chtějí realizovat svou neomezenou
+                                    kreativitu. Zde mohou hráči stavět fantastické struktury, vytvářet umělecká díla a
+                                    experimentovat s různými architektonickými nápady. Díky obrovskému množství bloků a
+                                    materiálů, které jsou hráčům k dispozici, jsou možnosti téměř nekonečné.
+                                </p>
+                                <p>
+                                    Dobrodružný režim představuje výzvu pro hráče, kteří se chtějí vydat na
+                                    dobrodružství napříč Minecraft světem. Tento režim je plný nebezpečných příšer,
+                                    tajemných jeskyní, starodávných chrámů a výzev, které musí hráči překonat. Je zde
+                                    také možnost hrát s přáteli ve vícehráčovém režimu a společně objevovat a budovat.
+                                </p>
+                                <figure class="figure-img">
+                                    <img src="img/Java_Edition_1.20.1.webp" alt="">
+                                    <figcaption>Minecraft: Java Edition - Titulní stránka</figcaption>
+                                </figure>
                             </div>
-                            <h3>
-                                Jedinečné vlastnosti Java edice
-                            </h3>
-                            <div class="article-1-odstavec-text">
-                                <div>
-                                    <p>
-                                        Aktualizace jsou spravovány přímo Minecraft Launcherem, což znamená, že nemusí
-                                        procházet certifikací držitelů platformy.
-                                    </p>
+                        </div>
+                        <h3>
+                            Jedinečné vlastnosti Java edice
+                        </h3>
+                        <div class="article-1-odstavec-text">
+                            <div>
+                                <p>
+                                    Aktualizace jsou spravovány přímo Minecraft Launcherem, což znamená, že nemusí
+                                    procházet certifikací držitelů platformy.
+                                </p>
 
-                                    <p>
-                                        Rozsáhlá moddingová komunita: Minecraft: Java Edition je známá svou živou a
-                                        tvořivou moddingovou komunitou. Hráči mohou vytvářet a instalovat modifikace,
-                                        které mění a rozšiřují herní obsah a funkce. Díky tomu mohou hráči upravovat
-                                        svět Minecraftu podle svých představ a přidávat nové prvky, jako jsou nové
-                                        bloky, příšery, biomech, nástroje a mnoho dalšího.
-                                    </p>
-                                    <p>
-                                        Možnost vytvářet vlastní textury a zvuky: V Minecraft: Java Edition mají hráči
-                                        možnost upravovat textury bloků, příšer, předmětů a zvuky ve hře. Tato vlastnost
-                                        umožňuje hráčům vytvářet a používat vlastní texturypodle svého vkusu, což
-                                        přispívá k individualitě a osobnímu stylu hraní.
-                                    </p>
-                                    <p>
-                                        Experimentální snapshoty: Vývojáři Minecraft: Java Edition pravidelně vydávají
-                                        tzv. "snapshoty", což jsou experimentální verze hry, které poskytují hráčům
-                                        možnost testovat nové funkce a obsah před jejich oficiálním vydáním. Hráči tak
-                                        mohou být součástí vývoje hry a poskytovat zpětnou vazbu vývojářům.
-                                    </p>
-                                    <figure class="figure-img">
-                                        <img src="img/Launcher_MCD_tab.webp" alt="">
-                                        <figcaption>Minecraft Launcher</figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                            <h3>
-                                Vývoj
-                            </h3>
-                            <div class="article-1-odstavec-text">
-                                <div>
-                                    <p>
-                                        Minecraft: Java Edition byla původně vyvinuta švédským programátorem Markusem
-                                        "Notchem" Perssonem a vydána firmou Mojang Studios v roce 2011. Hra rychle
-                                        získala obrovskou popularitu a stala se fenoménem mezi hráči po celém světě. Od
-                                        svého vydání se Minecraft: Java Edition průběžně vyvíjela a dostávala nové
-                                        aktualizace a obsah. Minecraft: Java Edition jak už název nasvědčuje je
-                                        programována jazykem <b>Java</b>.
-                                    </p>
-                                    <figure class="figure-img">
-                                        <img src="img/CaveGame.webp" alt="">
-                                        <figcaption>Nejstarší podoba Minecraftu - Cave Game</figcaption>
-                                    </figure>
-                                    <p>
-                                        V průběhu let byly do Minecraft: Java Edition přidávány další aktualizace a
-                                        rozšíření, které hru obohacovaly o nový obsah a funkce. Mezi nejvýznamnější
-                                        aktualizace patří například <b>"The Nether Update"</b> (aktualizace Pekla),
-                                        která v roce 2020 přinesla kompletní přepracování podsvětí, přidání nových
-                                        biomech a předmětů. Další významnou aktualizací byla <b>"Caves & Cliffs
-                                            Update"</b> (aktualizace Jeskyní a Hor), která se plánovala na rok 2021 a
-                                        přinesla rozšíření jeskyní, nové generované vrstvy a další biomech.
-                                    </p>
-                                    <figure class="figure-img">
-                                        <img src="img/netherupdatecover.jpg" alt="">
-                                        <figcaption>Minecraft 1.16 - Nether Update</figcaption>
-                                    </figure>
-                                    <p>
-                                        Minecraft: Java Edition je stále aktivně vyvíjena a vylepšována, aby hráčům
-                                        poskytovala neustále nové zážitky a možnosti. Nejnovější aktualizace <b>1.20</b>
-                                        vyšla 7. června 2023 pod jménem <b>Trails & Tales</b>, kdy sebou přinesla novou
-                                        strukturu tzv. "Trail Ruins", což jsou podzemní struktury, které fungují jako
-                                        archeologické náleziště.
-                                    </p>
-                                    <figure class="figure-img">
-                                        <img src="img/Keyart-Minecraft_Trails-Tales_.Net_1280x720.avif" alt="">
-                                        <figcaption>Minecraft 1.20 - Trails & Tales</figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </section>
-                <section id="clanek-2">
-                    <h2>
-                        Minecraft: Bedrock Edition
-                    </h2>
-                    <article>
-                        <div id="article-2-text">
-                            <div class="article-2-odstavec-text">
                                 <p>
-                                    Termín "Bedrock Edition" pochází z kódového základu Bedrock, který byl vytvořen v
-                                    programovacím jazyce <b>C++</b> pro provoz na platformách, které nemohou podporovat
-                                    programovací jazyk Java. Byl přidán kód pro přizpůsobení rozdílům v cílových
-                                    platformách, jako jsou síťové služby a přístup k úložišti. Přestože je na každé
-                                    platformě použito přibližně 90 % kódu. Engine na kterém hra běží se nazývá "Bedrock
-                                    Engine".
+                                    Rozsáhlá moddingová komunita: Minecraft: Java Edition je známá svou živou a
+                                    tvořivou moddingovou komunitou. Hráči mohou vytvářet a instalovat modifikace,
+                                    které mění a rozšiřují herní obsah a funkce. Díky tomu mohou hráči upravovat
+                                    svět Minecraftu podle svých představ a přidávat nové prvky, jako jsou nové
+                                    bloky, příšery, biomech, nástroje a mnoho dalšího.
+                                </p>
+                                <p>
+                                    Možnost vytvářet vlastní textury a zvuky: V Minecraft: Java Edition mají hráči
+                                    možnost upravovat textury bloků, příšer, předmětů a zvuky ve hře. Tato vlastnost
+                                    umožňuje hráčům vytvářet a používat vlastní texturypodle svého vkusu, což
+                                    přispívá k individualitě a osobnímu stylu hraní.
+                                </p>
+                                <p>
+                                    Experimentální snapshoty: Vývojáři Minecraft: Java Edition pravidelně vydávají
+                                    tzv. "snapshoty", což jsou experimentální verze hry, které poskytují hráčům
+                                    možnost testovat nové funkce a obsah před jejich oficiálním vydáním. Hráči tak
+                                    mohou být součástí vývoje hry a poskytovat zpětnou vazbu vývojářům.
                                 </p>
                                 <figure class="figure-img">
-                                    <img src="img/Bedrock_1.20.0.webp" alt="">
-                                    <figcaption>Minecraft: Bedrock Edition - Titulní stránka</figcaption>
-                                </figure>
-                                <p>
-                                    Cílové platformy jsou vytvářeny individuálně a poté přeneseny do obchodů daných
-                                    platforem. Většina obchodů má vlastní požadavky na shodu a nová verze je podrobena
-                                    sérii certifikačních testů předtím, než je zpřístupněna ke stažení. <b>Xbox Game
-                                        Studios</b> se snaží synchronizovat dostupnost ve všech obchodech, ale proces
-                                    certifikace není pod jejich kontrolou a může způsobit zpoždění dostupnosti na určité
-                                    platformě, zejména pokud selže při certifikaci a musí být vrácen vývojářům k opravě.
-                                </p>
-                            </div>
-                            <h3>Hratelnost</h3>
-                            <div class="article-2-odstavec-text">
-                                <p>
-                                    Cíl hry zůstává stejný jako u jeho protějšků Java Edition a Legacy Console Edition,
-                                    kde hráči mohou budovat virtuální reality v sandboxovém prostředí. Stejně jako tyto
-                                    verze, má i Bedrock Edition prvky přežití, jako je hladovění a vaření, a dimenze
-                                    Nether a End. Multiplayerový režim je kompatibilní mezi všemi podporovanými
-                                    zařízeními.
-                                </p>
-                                <p>
-                                    Bedrock Edition se od Java Edition a Legacy Console Edition liší v různých ohledech,
-                                    například má sytější grafiku, odlišnou generaci terénu, některé exkluzivní předměty
-                                    a oficiální systém doplňků. HUD a další prvky se liší pro každé příslušné zařízení.
-                                    Hráči mohou interagovat s hrou pomocí klávesnice a myši, dotykové obrazovky nebo
-                                    gamepadu.
-                                </p>
-                                <div class="article-2-rozdily">
-                                    <p>
-                                        <b>Rozdíly proti Java Edici zahrnují:</b>
-                                    </p>
-                                    <ul>
-                                        <li>Některé moby, bloky a předměty se chovají a vypadají jinak než v Java
-                                            Edition.</li>
-                                        <li>Lokální síť (LAN), umožňující připojení 8 a více hráčů do jednoho světa.
-                                        </li>
-                                        <li>Je také k dispozici seznam "vybraných" serverů (partnerů Mojang Studios),
-                                            které nabízejí předdefinované multiplayerové minihry v prostředí Minecraftu.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="article-2-rozdily">
-                                    <p>
-                                        <b>Některé funkce Bedrock Edition jsou dostupné pouze na určitých
-                                            platformách:</b>
-                                    </p>
-                                    <ul>
-                                        <li>Virtuální realita je dostupná pouze na <b>Windows</b> a <b>PlayStation
-                                                4</b>.</li>
-                                        <li>Importování nebo exportování světů je podporováno pouze na <b>Windows</b>.
-                                        </li>
-                                        <li>Připojení k serverům pomocí IP adresy není podporováno na <b>Xbox One</b>,
-                                            <b>Nintendo Switch</b> ani <b>PlayStation 4</b>.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </section>
-                <section id="clanek-3">
-                    <h2>
-                        Minecraft Dungeons
-                    </h2>
-                    <article>
-                        <div id="article-3-text">
-                            <div class="article-3-odstavec-text">
-                                <p>
-                                    Minecraft Dungeons je akční adventura s prvky role-playe vyvinutá společnostmi
-                                    <b>Mojang Studios</b>, <b>Xbox Game Studios</b> a <b>Double Eleven</b>. Hra byla
-                                    vydána <b>26. května 2020</b> pro Windows skrze Microsoft Store, Xbox One, Nintendo
-                                    Switch a PlayStation 4. <b>15. září 2020</b> byla hra vydána pro Xbox Cloud Gaming,
-                                    <b>10. listopadu 2020</b> pro Xbox Series X|S a <b>22. září 2021</b> na Steam pro
-                                    Windows.
-                                </p>
-                                <figure class="figure-img">
-                                    <img src="img/Minecraft_Dungeons_horizontal_key_art.webp" alt="">
-                                    <figcaption>Minecraft Dungeons</figcaption>
-                                </figure>
-                            </div>
-                            <div class="article-3-odstavec-text">
-                                <p>
-                                    Hra podporuje až čtyři hráče a nabízí různé nové zbraně, předměty a příšery, stejně
-                                    jako různá prostředí k prozkoumání a hlavní příběh, ve kterém se hráčské postavy,
-                                    hrdinové, utkávají s hlavním záporákem nazývaným <b>Arch-Ilager</b>.
-                                </p>
-                                <p>
-                                    Hra obsahuje specifické úkoly a lokace, spolu s procedurálně generovanými prvky.
-                                </p>
-                                <p>
-                                    Hráč není omezen na jednu třídu a může si vzít další zbroj nebo zbraně a používat
-                                    je. Hráči nemohou stavět ani těžit, protože se hra zaměřuje na akci/dobrodružství.
-                                    Hra se odehrává jak na povrchu, tak v podzemí. Hráči mohou znovu hrát úrovně, které
-                                    již předtím dokončili.
-                                </p>
-                                <p>
-                                    Existuje táborový "hub", který se nachází částečně v rámci tutoriální mise, Squid
-                                    Coast, a obsahuje obchody, které jsou odemčeny záchranou obchodníků.
-                                </p>
-                                <p>
-                                    Mise jsou procedurálně generovány.
-                                </p>
-                                <figure class="figure-img">
-                                    <img src="img/2020-05-26-product-7.jpg" alt="">
-                                    <figcaption>Screenshot ze hry</figcaption>
-                                </figure>
-                            </div>
-                            <h3>
-                                Hrdina
-                            </h3>
-                            <div class="article-3-odstavec-text">
-                                <p>
-                                    Hrdina je postava, kterou hráč ovládá ve hře. Při spuštění hry si hráč může vybrat
-                                    kosmetického hrdinu, kterého může používat po celou dobu hry. Všichni hrdinové jsou
-                                    pouze kosmetické a neposkytují žádné speciální výhody.
-                                </p>
-                                <p>
-                                    Při výběru hrdiny zůstává veškerá výbava, úrovně a postup pouze u tohoto hrdiny a
-                                    nejsou přenášeny na ostatní hrdiny, které hráč ovládá. Pokud hráč začal hru s
-                                    určitým hrdinou, ale změnil názor a chce hrát s jiným hrdinou a jinou výbavou, může
-                                    duplikovat hrdinu se stejnou výbavou, jakou měl původní hrdina.
-                                </p>
-                                <figure class="figure-img">
-                                    <img src="img/Dungeons_BO1OJiCNkQ.webp" alt="">
-                                    <figcaption>Výběr hrdiny</figcaption>
-                                </figure>
-                            </div>
-                            <h3>
-                                Mise
-                            </h3>
-                            <div class="article-3-odstavec-text">
-                                <p>
-                                    Když hráč poprvé spustí hru, vybraný hrdina začíná na <b>Squid Coast</b>. Postupně
-                                    pak pokračuje skrze další mise, jako například <b>Creeper Woods</b>, až dosáhne
-                                    finální mise základní hry, <b>Obsidian Pinnacle</b>. Někdy mise může generovat
-                                    místnost, která umožňuje přístup k tajné misi, jako je například <b>Creepy
-                                        Crypt</b>, <b>Lower Temple</b>, <b>Soggy Cave</b>, <b>Arch Haven</b> nebo
-                                    <b>Underhalls</b>.
-                                </p>
-                                <p>
-                                    Ostatní mise lze získat postupným průchodem misí normálním způsobem, například
-                                    <b>Pumpkin Pastures</b>, <b>Redstone Mines</b>, <b>Desert Temple</b> a <b>Highblock
-                                        Halls</b>. Většina misí hlavního příběhu s Arch-Illagerem se odehrává na
-                                    pevninské části.
-                                </p>
-                                <p>
-                                    Ostatní mise jsou dostupné pouze skrze DLC balíčky. Tajná mise, ???, vyžaduje, aby
-                                    hrdinové po poražení Arch-Illagera sebrali všechny devět run po sobě.
-                                </p>
-                                <figure class="figure-img">
-                                    <img src="img/Minecraft-Dungeons-Map.jpg" alt="">
-                                    <figcaption>Minecraft Dungeons - Mapa</figcaption>
+                                    <img src="img/Launcher_MCD_tab.webp" alt="">
+                                    <figcaption>Minecraft Launcher</figcaption>
                                 </figure>
                             </div>
                         </div>
-                    </article>
-                </section>
+                        <h3>
+                            Vývoj
+                        </h3>
+                        <div class="article-1-odstavec-text">
+                            <div>
+                                <p>
+                                    Minecraft: Java Edition byla původně vyvinuta švédským programátorem Markusem
+                                    "Notchem" Perssonem a vydána firmou Mojang Studios v roce 2011. Hra rychle
+                                    získala obrovskou popularitu a stala se fenoménem mezi hráči po celém světě. Od
+                                    svého vydání se Minecraft: Java Edition průběžně vyvíjela a dostávala nové
+                                    aktualizace a obsah. Minecraft: Java Edition jak už název nasvědčuje je
+                                    programována jazykem <b>Java</b>.
+                                </p>
+                                <figure class="figure-img">
+                                    <img src="img/CaveGame.webp" alt="">
+                                    <figcaption>Nejstarší podoba Minecraftu - Cave Game</figcaption>
+                                </figure>
+                                <p>
+                                    V průběhu let byly do Minecraft: Java Edition přidávány další aktualizace a
+                                    rozšíření, které hru obohacovaly o nový obsah a funkce. Mezi nejvýznamnější
+                                    aktualizace patří například <b>"The Nether Update"</b> (aktualizace Pekla),
+                                    která v roce 2020 přinesla kompletní přepracování podsvětí, přidání nových
+                                    biomech a předmětů. Další významnou aktualizací byla <b>"Caves & Cliffs
+                                        Update"</b> (aktualizace Jeskyní a Hor), která se plánovala na rok 2021 a
+                                    přinesla rozšíření jeskyní, nové generované vrstvy a další biomech.
+                                </p>
+                                <figure class="figure-img">
+                                    <img src="img/netherupdatecover.jpg" alt="">
+                                    <figcaption>Minecraft 1.16 - Nether Update</figcaption>
+                                </figure>
+                                <p>
+                                    Minecraft: Java Edition je stále aktivně vyvíjena a vylepšována, aby hráčům
+                                    poskytovala neustále nové zážitky a možnosti. Nejnovější aktualizace <b>1.20</b>
+                                    vyšla 7. června 2023 pod jménem <b>Trails & Tales</b>, kdy sebou přinesla novou
+                                    strukturu tzv. "Trail Ruins", což jsou podzemní struktury, které fungují jako
+                                    archeologické náleziště.
+                                </p>
+                                <figure class="figure-img">
+                                    <img src="img/Keyart-Minecraft_Trails-Tales_.Net_1280x720.avif" alt="">
+                                    <figcaption>Minecraft 1.20 - Trails & Tales</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="clanek-2">
+                <h2>
+                    Minecraft: Bedrock Edition
+                </h2>
+                <article>
+                    <div id="article-2-text">
+                        <div class="article-2-odstavec-text">
+                            <p>
+                                Termín "Bedrock Edition" pochází z kódového základu Bedrock, který byl vytvořen v
+                                programovacím jazyce <b>C++</b> pro provoz na platformách, které nemohou podporovat
+                                programovací jazyk Java. Byl přidán kód pro přizpůsobení rozdílům v cílových
+                                platformách, jako jsou síťové služby a přístup k úložišti. Přestože je na každé
+                                platformě použito přibližně 90 % kódu. Engine na kterém hra běží se nazývá "Bedrock
+                                Engine".
+                            </p>
+                            <figure class="figure-img">
+                                <img src="img/Bedrock_1.20.0.webp" alt="">
+                                <figcaption>Minecraft: Bedrock Edition - Titulní stránka</figcaption>
+                            </figure>
+                            <p>
+                                Cílové platformy jsou vytvářeny individuálně a poté přeneseny do obchodů daných
+                                platforem. Většina obchodů má vlastní požadavky na shodu a nová verze je podrobena
+                                sérii certifikačních testů předtím, než je zpřístupněna ke stažení. <b>Xbox Game
+                                    Studios</b> se snaží synchronizovat dostupnost ve všech obchodech, ale proces
+                                certifikace není pod jejich kontrolou a může způsobit zpoždění dostupnosti na určité
+                                platformě, zejména pokud selže při certifikaci a musí být vrácen vývojářům k opravě.
+                            </p>
+                        </div>
+                        <h3>Hratelnost</h3>
+                        <div class="article-2-odstavec-text">
+                            <p>
+                                Cíl hry zůstává stejný jako u jeho protějšků Java Edition a Legacy Console Edition,
+                                kde hráči mohou budovat virtuální reality v sandboxovém prostředí. Stejně jako tyto
+                                verze, má i Bedrock Edition prvky přežití, jako je hladovění a vaření, a dimenze
+                                Nether a End. Multiplayerový režim je kompatibilní mezi všemi podporovanými
+                                zařízeními.
+                            </p>
+                            <p>
+                                Bedrock Edition se od Java Edition a Legacy Console Edition liší v různých ohledech,
+                                například má sytější grafiku, odlišnou generaci terénu, některé exkluzivní předměty
+                                a oficiální systém doplňků. HUD a další prvky se liší pro každé příslušné zařízení.
+                                Hráči mohou interagovat s hrou pomocí klávesnice a myši, dotykové obrazovky nebo
+                                gamepadu.
+                            </p>
+                            <div class="article-2-rozdily">
+                                <p>
+                                    <b>Rozdíly proti Java Edici zahrnují:</b>
+                                </p>
+                                <ul>
+                                    <li>Některé moby, bloky a předměty se chovají a vypadají jinak než v Java
+                                        Edition.</li>
+                                    <li>Lokální síť (LAN), umožňující připojení 8 a více hráčů do jednoho světa.
+                                    </li>
+                                    <li>Je také k dispozici seznam "vybraných" serverů (partnerů Mojang Studios),
+                                        které nabízejí předdefinované multiplayerové minihry v prostředí Minecraftu.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="article-2-rozdily">
+                                <p>
+                                    <b>Některé funkce Bedrock Edition jsou dostupné pouze na určitých
+                                        platformách:</b>
+                                </p>
+                                <ul>
+                                    <li>Virtuální realita je dostupná pouze na <b>Windows</b> a <b>PlayStation
+                                            4</b>.</li>
+                                    <li>Importování nebo exportování světů je podporováno pouze na <b>Windows</b>.
+                                    </li>
+                                    <li>Připojení k serverům pomocí IP adresy není podporováno na <b>Xbox One</b>,
+                                        <b>Nintendo Switch</b> ani <b>PlayStation 4</b>.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="clanek-3">
+                <h2>
+                    Minecraft Dungeons
+                </h2>
+                <article>
+                    <div id="article-3-text">
+                        <div class="article-3-odstavec-text">
+                            <p>
+                                Minecraft Dungeons je akční adventura s prvky role-playe vyvinutá společnostmi
+                                <b>Mojang Studios</b>, <b>Xbox Game Studios</b> a <b>Double Eleven</b>. Hra byla
+                                vydána <b>26. května 2020</b> pro Windows skrze Microsoft Store, Xbox One, Nintendo
+                                Switch a PlayStation 4. <b>15. září 2020</b> byla hra vydána pro Xbox Cloud Gaming,
+                                <b>10. listopadu 2020</b> pro Xbox Series X|S a <b>22. září 2021</b> na Steam pro
+                                Windows.
+                            </p>
+                            <figure class="figure-img">
+                                <img src="img/Minecraft_Dungeons_horizontal_key_art.webp" alt="">
+                                <figcaption>Minecraft Dungeons</figcaption>
+                            </figure>
+                        </div>
+                        <div class="article-3-odstavec-text">
+                            <p>
+                                Hra podporuje až čtyři hráče a nabízí různé nové zbraně, předměty a příšery, stejně
+                                jako různá prostředí k prozkoumání a hlavní příběh, ve kterém se hráčské postavy,
+                                hrdinové, utkávají s hlavním záporákem nazývaným <b>Arch-Ilager</b>.
+                            </p>
+                            <p>
+                                Hra obsahuje specifické úkoly a lokace, spolu s procedurálně generovanými prvky.
+                            </p>
+                            <p>
+                                Hráč není omezen na jednu třídu a může si vzít další zbroj nebo zbraně a používat
+                                je. Hráči nemohou stavět ani těžit, protože se hra zaměřuje na akci/dobrodružství.
+                                Hra se odehrává jak na povrchu, tak v podzemí. Hráči mohou znovu hrát úrovně, které
+                                již předtím dokončili.
+                            </p>
+                            <p>
+                                Existuje táborový "hub", který se nachází částečně v rámci tutoriální mise, Squid
+                                Coast, a obsahuje obchody, které jsou odemčeny záchranou obchodníků.
+                            </p>
+                            <p>
+                                Mise jsou procedurálně generovány.
+                            </p>
+                            <figure class="figure-img">
+                                <img src="img/2020-05-26-product-7.jpg" alt="">
+                                <figcaption>Screenshot ze hry</figcaption>
+                            </figure>
+                        </div>
+                        <h3>
+                            Hrdina
+                        </h3>
+                        <div class="article-3-odstavec-text">
+                            <p>
+                                Hrdina je postava, kterou hráč ovládá ve hře. Při spuštění hry si hráč může vybrat
+                                kosmetického hrdinu, kterého může používat po celou dobu hry. Všichni hrdinové jsou
+                                pouze kosmetické a neposkytují žádné speciální výhody.
+                            </p>
+                            <p>
+                                Při výběru hrdiny zůstává veškerá výbava, úrovně a postup pouze u tohoto hrdiny a
+                                nejsou přenášeny na ostatní hrdiny, které hráč ovládá. Pokud hráč začal hru s
+                                určitým hrdinou, ale změnil názor a chce hrát s jiným hrdinou a jinou výbavou, může
+                                duplikovat hrdinu se stejnou výbavou, jakou měl původní hrdina.
+                            </p>
+                            <figure class="figure-img">
+                                <img src="img/Dungeons_BO1OJiCNkQ.webp" alt="">
+                                <figcaption>Výběr hrdiny</figcaption>
+                            </figure>
+                        </div>
+                        <h3>
+                            Mise
+                        </h3>
+                        <div class="article-3-odstavec-text">
+                            <p>
+                                Když hráč poprvé spustí hru, vybraný hrdina začíná na <b>Squid Coast</b>. Postupně
+                                pak pokračuje skrze další mise, jako například <b>Creeper Woods</b>, až dosáhne
+                                finální mise základní hry, <b>Obsidian Pinnacle</b>. Někdy mise může generovat
+                                místnost, která umožňuje přístup k tajné misi, jako je například <b>Creepy
+                                    Crypt</b>, <b>Lower Temple</b>, <b>Soggy Cave</b>, <b>Arch Haven</b> nebo
+                                <b>Underhalls</b>.
+                            </p>
+                            <p>
+                                Ostatní mise lze získat postupným průchodem misí normálním způsobem, například
+                                <b>Pumpkin Pastures</b>, <b>Redstone Mines</b>, <b>Desert Temple</b> a <b>Highblock
+                                    Halls</b>. Většina misí hlavního příběhu s Arch-Illagerem se odehrává na
+                                pevninské části.
+                            </p>
+                            <p>
+                                Ostatní mise jsou dostupné pouze skrze DLC balíčky. Tajná mise, ???, vyžaduje, aby
+                                hrdinové po poražení Arch-Illagera sebrali všechny devět run po sobě.
+                            </p>
+                            <figure class="figure-img">
+                                <img src="img/Minecraft-Dungeons-Map.jpg" alt="">
+                                <figcaption>Minecraft Dungeons - Mapa</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <div class="buttons" id="buttons-modded">
+                <button onclick="zmenitForge()" id="clanek4-button" class="button">Forge</button>
+                <button onclick="zmenitFabric()" id="clanek5-button" class="button">Fabric</button>
             </div>
-
+            <div class="select-div">
+                <select id="modded-select" onchange="zmenitModded(this)">
+                    <option value="4">Forge</option>
+                    <option value="5">Fabric</option>
+                </select>
+            </div>
+            <div class="line"></div>
+            <section id="clanek-4">
+                <h2>Forge</h2>
+                <article>
+                    <div id="article-4-text">
+                        <div class="article-4-odstavec-text">
+                            <p>
+                                Minecraft Forge, obecně známý jako Forge, je rozsáhlé rozhraní API a načítací modul využívaný moddery ke spojení s kódem Minecraftu a vytváření modifikací. Forge obsahuje množství přístupových bodů do herního jádra Minecraftu, což umožňuje moddům vytvářet modifikace s vysokou mírou kompatibility. Forge také umožňuje moddům provádět manipulaci s bajtkódem, aby ještě více upravovali hru. Hráči jej mohou použít k současnému spouštění různých modifikací.
+                            </p>
+                            <a href="forge.html" class="preklik">
+                                <p>
+                                    <b>Více informací o tomto mod loaderu zjistíte kliknutím na tento text nebo na logo níže.</b>
+                                </p>                                
+                            </a>
+                            <figure class="figure-img">
+                                <a href="forge.html">
+                                    <img src="img/Minecraft_Forge_logo.webp" alt="">
+                                </a>
+                                <figcaption>Minecraft Forge - Logo</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="clanek-5">
+                <h2>Fabric</h2>
+                <article>
+                    <div id="article-5-text">
+                        <div class="article-5-odstavec-text">
+                            <p>
+                                Fabric je lehký modloader. Obsahuje samostatné rozhraní API, které je vyžadováno většinou, ale ne ve všech případech u Fabric modifikací ve složce s modifikacemi. Práce na něm začala spolu s 1.14 snapshoty Minecraft: Java Edition před vydáním náhledu 18w49a (před 5. prosincem 2018). Vznikl v roce 2016 jako projekt pro zábavu a byl veřejně oznámen v roce 2018.
+                            </p>
+                            <a href="fabric.html" class="preklik">
+                                <p>
+                                    <b>Více informací o tomto mod loaderu zjistíte kliknutím na tento text nebo na logo níže.</b>
+                                </p>                                
+                            </a>
+                            <figure class="figure-img">
+                                <a href="fabric.html">
+                                    <img src="img/Minecraft-Fabric-Logo.png" alt="">
+                                </a>
+                                <figcaption>Fabric Loader - Logo</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+            </section>
         </main>
         <footer>
             <div id="footer-links">
