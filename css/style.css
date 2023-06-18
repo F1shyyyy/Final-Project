@@ -163,12 +163,7 @@ ul {
     font-size: 1.5rem;
 }
 
-.article-1-odstavec-text p,
-.article-2-odstavec-text p,
-.article-2-rozdily li,
-.article-3-odstavec-text p,
-.article-4-odstavec-text p,
-.article-5-odstavec-text p {
+.article-2-rozdily li {
     font-size: 1.2rem;
 }
 
@@ -178,6 +173,7 @@ ul {
 .article-4-odstavec-text p,
 .article-5-odstavec-text p {
     margin-bottom: 15px;
+    font-size: 1.2rem;
 }
 
 .article-2-rozdily {
@@ -211,7 +207,99 @@ ul {
     font-size: 3rem;
     padding: 5%;
 }
-
+#forge-clanek{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh;
+}
+#forge-uvod{
+    display: flex;
+    justify-content: center;
+}
+#forge-uvod img{
+    width: 40%;
+    border-radius: 20px;
+}
+.forge-clanek-text{
+    width: 90%;
+    margin: 2vh auto;
+    padding: 10px;
+    border: 1px solid #070504;
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+}
+.forge-clanek-text p{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+#forge-clanek h2{
+    font-size: 3rem;
+}
+.forge-clanek-odstavec-text h3{
+    font-size: 2rem;
+}
+#forge-modifikace-dropdown{
+    border: none;
+    background-color: white;
+    color: rgb(8, 8, 179);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+#forge-modifikace-dropdown:hover{
+    color: #4e2612;
+}
+#forge-modifikace{
+    display: none;
+    flex-wrap: wrap;
+    margin: 2vh auto;
+    width: 90%;
+}
+.modifikace{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.modifikace a{
+    color: black;
+}
+.modifikace img{
+    width: 60%;
+    border: 1px solid #070504;
+    border-radius: 15px
+}
+#forge-verze{
+    display: flex;
+    flex-direction: column;
+}
+#forge-verze-select select{
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    padding: 7.5px;
+    width: 20vw;
+    text-overflow: ellipsis;
+}
+#forge-mdp-1710{
+    display: flex;
+}
+#forge-mdp-1102,
+#forge-mdp-1122,
+#forge-mdp-1165,
+#forge-mdp-1192{
+    display: none;
+}
+.forge-modpack{
+    width: 25%;
+}
+.forge-modpack p{
+    color: black;
+}
+.forge-modpack img{
+    width: 75%;
+}
 footer {
     display: flex;
     align-items: center;
@@ -265,7 +353,9 @@ footer {
     .figure-img img {
         width: 100%;
     }
-
+    .modifikace img{
+        width: 80%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -286,11 +376,27 @@ footer {
     .buttons {
         display: none;
     }
-
+    #forge-modifikace{
+        flex-direction: column;
+        align-items: center;
+    }
+    .modifikace img{
+        width: 80%;
+    }
     .select-div {
         display: flex;
     }
-
+    .forge-modpacks{
+        flex-direction: column;
+        align-items: center;
+    }
+    .forge-modpack{
+        width: 90%;
+        margin: 15px;
+    }
+    #forge-verze-select select{
+        width: 89vw;
+    }
     #footer-links {
         flex-direction: column;
     }

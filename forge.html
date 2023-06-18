@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/icons8-curseforge-48.png">
-    <title>Minecraft - Mods</title>
+    <script src="js/dropdown.js" defer></script>
+    <title>Minecraft Forge</title>
 </head>
 
 <body>
@@ -24,7 +25,249 @@
             </nav>
         </header>
         <main>
-
+            <section id="forge-clanek">
+                <h2 id="forge-uvod">
+                    <img src="img/Minecraft_Forge_logo.webp" alt="">
+                </h2>
+                <div class="forge-clanek-text">
+                    <div class="forge-clanek-odstavec-text">
+                        <p>
+                            Minecraft Forge je mocné rozhraní API (Application Programming Interface) a načítací modul, který se stal volbou číslo jedna pro moddery, kteří chtějí rozšířit a vylepšit zážitek z Minecraftu. Slouží jako most mezi herním kódem Minecraftu a modifikacemi vytvořenými komunitou, poskytující pevný základ pro vývoj modifikací.
+                        </p>
+                        <p>
+                            V jádru Forge poskytuje modderům sadu nástrojů, knihoven a přístupových bodů, které jim umožňují proniknout do nitra Minecraftu. Tímto využíváním zdrojů mohou moddové vytvářet širokou škálu modifikací, od jednoduchých úprav a přídavků po složité přestavby herního systému. Forge nabízí vysokou úroveň kompatibility, umožňující součinnost různých modifikací, dávající hráčům svobodu přizpůsobit si svůj zážitek z Minecraftu podle svých představ.
+                        </p>
+                        <p>
+                            Jednou z hlavních výhod Minecraft Forge je jeho rozsáhlá modderská komunita. S Forge jako základem vytvořili nespočet modderů širokou škálu modifikací, od nových předmětů, bloků a mobů až po celé dimenze a herní mechaniky. Bez ohledu na aspekt Minecraftu, který chcete vylepšit nebo změnit, je pravděpodobné, že existuje Forge modifikace, která splní vaše přání.
+                        </p>
+                        <button onclick="dropdownMods()" id="forge-modifikace-dropdown">Seznam nejznámějších Forge modifikací &#11167</button>
+                        <div id="forge-modifikace">
+                            <div class="modifikace">
+                                <a href="https://www.curseforge.com/minecraft/mc-mods/jei" target="_blank">
+                                    <img src="img/JEI.jpeg" alt="">
+                                    <p>JEI</p>
+                                </a>
+                            </div>
+                            <div class="modifikace">
+                                <a href="https://www.curseforge.com/minecraft/mc-mods/journeymap" target="_blank">
+                                    <img src="img/JourneyMap.png" alt="">
+                                    <p>Journey Map</p>
+                                </a>
+                            </div>
+                            <div class="modifikace">
+                                <a href="https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks" target="_blank">
+                                    <img src="img/MouseTweaks.png" alt="">
+                                    <p>Mouse Tweaks</p>
+                                </a>
+                            </div>
+                            <div class="modifikace">
+                                <a href="https://www.curseforge.com/minecraft/mc-mods/mantle" target="_blank">
+                                    <img src="img/Mantle.png" alt="">
+                                    <p>Mantle</p>
+                                </a>
+                            </div>
+                            <div class="modifikace">
+                                <a href="https://www.curseforge.com/minecraft/mc-mods/appleskin" target="_blank">
+                                    <img src="img/AppleSkin.png" alt="">
+                                    <p>AppleSkin</p>
+                                </a>
+                            </div>
+                            <div class="modifikace">
+                                <a href="https://www.curseforge.com/minecraft/mc-mods/autoreglib" target="_blank">
+                                    <img src="img/AutoRegLib.png" alt="">
+                                    <p>ARL</p>
+                                </a>
+                            </div>
+                            <div class="modifikace">
+                                <a href="https://www.curseforge.com/minecraft/mc-mods/controlling" target="_blank">
+                                    <img src="img/Controlling.png" alt="">
+                                    <p>Controlling</p>
+                                </a>
+                            </div>
+                            <div class="modifikace">
+                                <a href="https://www.curseforge.com/minecraft/mc-mods/bookshelf" target="_blank">
+                                    <img src="img/Bookshelf.png" alt="">
+                                    <p>Bookshelf</p>
+                                </a>
+                            </div>
+                            <div class="modifikace">
+                                <a href="https://www.curseforge.com/minecraft/mc-mods/storage-drawers" target="_blank">
+                                    <img src="img/StorageDrawers.png" alt="">
+                                    <p>Storage Drawers</p>
+                                </a>
+                            </div>
+                            <div class="modifikace">
+                                <a href="https://www.curseforge.com/minecraft/mc-mods/tinkers-construct" target="_blank">
+                                    <img src="img/Tinkersconstruct.png" alt="">
+                                    <p>Tinkers' construct</p>
+                                </a>
+                            </div>
+                        </div>
+                        <p>
+                            Schopnosti Forge v oblasti modifikací přesahují pouhé přidávání obsahu do hry. Umožňuje také modderům provádět manipulaci s bajtkódem, což je technika, při níž se upravuje zkompilovaný kód Minecraftu na nižší úrovni. To otevírá ještě více možností tvůrcům modifikací a umožňuje jim provádět hlubší změny v mechanice a chování hry.
+                        </p>
+                        <p>
+                            Instalace Forge a používání modifikací je relativně jednoduché. Tým Forge poskytuje instalátor, který se stará o proces nastavení, aby byl přístupný hráčům s různou úrovní technického povědomí. Jakmile je Forge nainstalován, hráči mohou procházet různé webové stránky nebo fóra zaměřená na modifikace, aby našli modifikace, které je zaujmou. Stažení modifikace obvykle spočívá v umístění souboru modifikace do příslušné složky určené pro modifikace v hře a po rychlém restartu je modifikace připravena k použití.
+                        </p>
+                        <!-- <h3>
+                            Verze
+                        </h3>
+                        <p>
+                            Zde můžete vidět forge verze bla bla bla
+                        </p>
+                        <div id="forge-verze">
+                            <p>
+                                dropdown
+                            </p>
+                        </div> -->
+                    </div>
+                </div>
+                <h2>Modpacky</h2>
+                <div id="forge-verze-select">
+                    <select name="" id="" onchange="zmenaVerze(this)">
+                        <option value="0">1.7.10</option>
+                        <option value="1">1.10.2</option>
+                        <option value="2">1.12.2</option>
+                        <option value="3">1.16.5</option>
+                        <option value="4">1.19.2</option>
+                    </select>                        
+                </div>
+                <div class="forge-clanek-text" id="forge-verze">
+                    <p>
+                        Nejznámější modpacky pro tuto verzi:
+                    </p>
+                    <div id="forge-mdp-1710" class="forge-modpacks">
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/gt-new-horizons" target="_blank">
+                                <img src="img/GTNH.png" alt="">
+                                <p>GT New Horizons</p>
+                            </a>                            
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/ftb-presents-skyfactory-2-5" target="_blank">
+                                <img src="img/SF25.png" alt="">
+                                <p>SkyFactory 2.5</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/star-wars-conquest" target="_blank">
+                                <img src="img/SWC.jpeg" alt="">
+                                <p>Star Wars Conquest</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/galactic-science" target="_blank">
+                                <img src="img/GS.png" alt="">
+                                <p>Galactic Science</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="forge-mdp-1102" class="forge-modpacks">
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/ftb-presents-skyfactory-3" target="_blank">
+                                <img src="img/SF3.png" alt="">
+                                <p>SkyFactory 3</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/farming-valley" target="_blank">
+                                <img src="img/FV.png" alt="">
+                                <p>Farming Valley</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/forever-stranded" target="_blank">
+                                <img src="img/FS.png" alt="">
+                                <p>Forever Stranded</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/invasion" target="_blank">
+                                <img src="img/INV.png" alt="">
+                                <p>Invasion</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="forge-mdp-1122" class="forge-modpacks">
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/sevtech-ages" target="_blank">
+                                <img src="img/STA.png" alt="">
+                                <p>SevTech: Ages</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="po3.html">
+                                <img src="img/PO3.png" alt="">
+                                <p>Project Ozone 3</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="mceternal.html">
+                                <img src="img/MCE.png" alt="">
+                                <p>MC Eternal</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/all-the-mods-3" target="_blank">
+                                <img src="img/ATM3.png" alt="">
+                                <p>All The Mods 3</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="forge-mdp-1165" class="forge-modpacks">
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/all-the-mods-6" target="_blank">
+                                <img src="img/ATM6.gif" alt="">
+                                <p>All The Mods 6</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/the-pixelmon-modpack" target="_blank">
+                                <img src="img/TPXM.png" alt="">
+                                <p>The Pixelmon Modpack</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc1" target="_blank">
+                                <img src="img/BMC1.png" alt="">
+                                <p>Better MC 1</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/valhelsia-3" target="_blank">
+                                <img src="img/VLH3.png" alt="">
+                                <p>Valhelsia 3</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="forge-mdp-1192" class="forge-modpacks">
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/all-the-mods-8" target="_blank">
+                                <img src="img/ATM8.png" alt="">
+                                <p>All The Mods 8</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/better-mc-forge-bmc3" target="_blank">
+                                <img src="img/BMC3.png" alt="">
+                                <p>Better MC 3</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/m-tech-1-19-2" target="_blank">
+                                <img src="img/MTECH.png" alt="">
+                                <p>M-Tech</p>
+                            </a>
+                        </div>
+                        <div class="forge-modpack">
+                            <a href="https://www.curseforge.com/minecraft/modpacks/minecolonies-official" target="_blank">
+                                <img src="img/MCO.png" alt="">
+                                <p>MineColonies Official</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <section id="footer-links">
